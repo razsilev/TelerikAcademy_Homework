@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>drop down list</title>
+    <script src="scripts/jquery-2-1-1.js"></script>
+    <style>
+        .dropdown-list-container div {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 130px;
+        }
+
+        .dropdown-list-container ul {
+            position: absolute;
+            top: 28px;
+            padding: 0;
+            margin: 0;
+        }
+
+            .dropdown-list-container ul li {
+                background-color: #b6ff00;
+                border-top: 1px solid #000;
+                width: 130px;
+                text-align: center;
+            }
+
+
+        .dropdown-list-container .current {
+            text-align: center;
+            background-color: #b6ff00;
+        }
+    </style>
+</head>
+<body>
+    <select id="dropdown">
+        <option value="1">Black</option>
+        <option value="2">Red</option>
+        <option value="3">Blue</option>
+        <option value="4">Yellow</option>
+    </select>
+    <script src="scripts/1-drop-down-list.js"></script>
+
+</body>
+</html>

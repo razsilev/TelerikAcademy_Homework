@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1CheckYearForLeap", "1CheckYearForLeap\1CheckYearForLeap.csproj", "{8E420553-1B65-4361-B6E3-82297E8821AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2TenRandomValuesInRange", "2TenRandomValuesInRange\2TenRandomValuesInRange.csproj", "{8D82C3E1-1CCD-406F-9923-BB4353A52235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3WhichDayOfTheWeekIsToday", "3WhichDayOfTheWeekIsToday\3WhichDayOfTheWeekIsToday.csproj", "{3555036B-0B57-4A5E-8FBF-F976BB9A871B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6CalculateSumFromString", "6CalculateSumFromString\6CalculateSumFromString.csproj", "{3315CA3A-784D-4EFC-8121-9BBD87B77B54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4CalculateTriangleSurface", "4CalculateTriangleSurface\4CalculateTriangleSurface.csproj", "{7C4B7E01-57A5-499D-BD45-4F88E81CB26A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5NumberOfWorkdays", "5NumberOfWorkdays\5NumberOfWorkdays.csproj", "{3BF1F41A-012C-444E-9E71-112BB0B5CEC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7CalculateArithmeticalExpression", "7CalculateArithmeticalExpression\7CalculateArithmeticalExpression.csproj", "{8BE6DEF3-3C50-4375-8DEB-8614BFFC86BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E420553-1B65-4361-B6E3-82297E8821AF}.Debug|x86.ActiveCfg = Debug|x86
+		{8E420553-1B65-4361-B6E3-82297E8821AF}.Debug|x86.Build.0 = Debug|x86
+		{8E420553-1B65-4361-B6E3-82297E8821AF}.Release|x86.ActiveCfg = Release|x86
+		{8E420553-1B65-4361-B6E3-82297E8821AF}.Release|x86.Build.0 = Release|x86
+		{8D82C3E1-1CCD-406F-9923-BB4353A52235}.Debug|x86.ActiveCfg = Debug|x86
+		{8D82C3E1-1CCD-406F-9923-BB4353A52235}.Debug|x86.Build.0 = Debug|x86
+		{8D82C3E1-1CCD-406F-9923-BB4353A52235}.Release|x86.ActiveCfg = Release|x86
+		{8D82C3E1-1CCD-406F-9923-BB4353A52235}.Release|x86.Build.0 = Release|x86
+		{3555036B-0B57-4A5E-8FBF-F976BB9A871B}.Debug|x86.ActiveCfg = Debug|x86
+		{3555036B-0B57-4A5E-8FBF-F976BB9A871B}.Debug|x86.Build.0 = Debug|x86
+		{3555036B-0B57-4A5E-8FBF-F976BB9A871B}.Release|x86.ActiveCfg = Release|x86
+		{3555036B-0B57-4A5E-8FBF-F976BB9A871B}.Release|x86.Build.0 = Release|x86
+		{3315CA3A-784D-4EFC-8121-9BBD87B77B54}.Debug|x86.ActiveCfg = Debug|x86
+		{3315CA3A-784D-4EFC-8121-9BBD87B77B54}.Debug|x86.Build.0 = Debug|x86
+		{3315CA3A-784D-4EFC-8121-9BBD87B77B54}.Release|x86.ActiveCfg = Release|x86
+		{3315CA3A-784D-4EFC-8121-9BBD87B77B54}.Release|x86.Build.0 = Release|x86
+		{7C4B7E01-57A5-499D-BD45-4F88E81CB26A}.Debug|x86.ActiveCfg = Debug|x86
+		{7C4B7E01-57A5-499D-BD45-4F88E81CB26A}.Debug|x86.Build.0 = Debug|x86
+		{7C4B7E01-57A5-499D-BD45-4F88E81CB26A}.Release|x86.ActiveCfg = Release|x86
+		{7C4B7E01-57A5-499D-BD45-4F88E81CB26A}.Release|x86.Build.0 = Release|x86
+		{3BF1F41A-012C-444E-9E71-112BB0B5CEC6}.Debug|x86.ActiveCfg = Debug|x86
+		{3BF1F41A-012C-444E-9E71-112BB0B5CEC6}.Debug|x86.Build.0 = Debug|x86
+		{3BF1F41A-012C-444E-9E71-112BB0B5CEC6}.Release|x86.ActiveCfg = Release|x86
+		{3BF1F41A-012C-444E-9E71-112BB0B5CEC6}.Release|x86.Build.0 = Release|x86
+		{8BE6DEF3-3C50-4375-8DEB-8614BFFC86BF}.Debug|x86.ActiveCfg = Debug|x86
+		{8BE6DEF3-3C50-4375-8DEB-8614BFFC86BF}.Debug|x86.Build.0 = Debug|x86
+		{8BE6DEF3-3C50-4375-8DEB-8614BFFC86BF}.Release|x86.ActiveCfg = Release|x86
+		{8BE6DEF3-3C50-4375-8DEB-8614BFFC86BF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

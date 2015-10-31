@@ -1,0 +1,79 @@
+﻿body, html, div, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos) {
+    background: @from-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+}
+
+.clearFix() {
+    zoom: 1;
+
+    &:after {
+        display: block;
+        content: "";
+        height: 0;
+        clear: both;
+    }
+}
+
+body {
+    color: #000;
+    font-size: 16px;
+    font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+
+    div#wrapper {
+        width: 960px;
+
+        div {
+            position: relative;
+            margin: 25px 0 0 25px;
+            border: 1px solid #000;
+            border-radius: 15px;
+            
+            .linear-gradient(#de28ff, 15%, #f9dbff, 75%);
+
+            h1 {
+                margin-top: 15px;
+                margin-left: 35px;
+                font-size: 1.8rem;
+            }
+
+            img {
+                position: absolute;
+            }
+
+            img.left-arrow {
+                top: 40%;
+            }
+
+            img.right-arrow {
+                top: 40%;
+                right: 0;
+            }
+
+            p.postedby {
+                width: 366px;
+                margin-top: 5px;
+                margin-left:50px;
+                padding: 5px 15px;
+                border-top: 1px solid #000;
+                border-bottom: 1px solid #000;
+            }
+
+            p.info {
+                margin: 21px 35px;
+                margin-bottom: 31px;
+                text-align: justify;
+            }
+        }
+    }
+}

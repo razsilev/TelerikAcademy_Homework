@@ -1,0 +1,15 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System" #>
+<#@ output extension=".txt" #>
+<# string text = "My template for numbers square root, rounded with three fractional digits."; #>
+<#= text #>
+
+<#int top = 15;
+
+for (int i = 1; i<=top; i++) 
+{ #>
+   The square root of <#= i #> is <#= Math.Round(Math.Sqrt(i), 3) #>
+<# } #>
+
+That's it!

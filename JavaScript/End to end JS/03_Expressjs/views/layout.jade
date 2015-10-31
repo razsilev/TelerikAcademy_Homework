@@ -1,0 +1,16 @@
+doctype
+html
+    head
+        title Express Homework
+        link(href='/styles/style.css', rel='stylesheet')
+        link(href='/styles/bootstrap.css', rel='stylesheet')
+    body
+        .navbar.navbar-default
+            .container
+                .navbar-header
+                    a.navbar-brand(href="/") Home
+                    a.navbar-brand(href='/contact') Contact As
+                    a.navbar-brand(href='/customer') Custumers
+    block main-content
+    footer.text-center.footer
+        p.bg-info Currently it is #{clock.datetime}

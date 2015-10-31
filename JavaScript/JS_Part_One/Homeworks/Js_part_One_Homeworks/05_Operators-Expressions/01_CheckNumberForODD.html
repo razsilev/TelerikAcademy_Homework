@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Check Number For ODD</title>
+    <link type="text/css" rel="stylesheet" href="styles/js-console.css" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var log = jsConsole.writeLine;
+
+        var number = 49;
+
+        if (number % 2 == 0) {
+            log(number + " is EVEN");
+        }
+        else {
+            log(number + " is ODD");
+        }
+
+        /* 2. Write a boolean expression that checks for given integer
+           if it can be divided (without remainder) by 7 and 5
+           in the same time */
+
+        if (number % (7 * 5) == 0) {
+            log(number + " - Can be divided (without remainder) by 7 and 5 in the same time.");
+        }
+        else {
+            log(number + " / (5 or 7)  have remaider!");
+        }
+
+
+        /* 3. Write an expression that calculates rectangle’s area by given width and height. */
+
+        function calcTriangleArea(width, height) {
+            var area = width * height;
+
+            return area;
+        }
+
+        var width = 5;
+        var height = 3;
+
+        log("");
+        log("The rectangle’s area is: " + calcTriangleArea(width, height));
+
+        /* 4. Write an expression that checks for given integer
+           if its third digit (right-to-left) is 7. E. g. 1732 -> true. */
+
+        function checkThirdDigitIs7(number) {
+            number /= 100;
+
+            // number = parseInt(number); whit bitwise operator
+            number = number | 0;
+
+            var digit = number % 10;
+
+            return digit == 7 ? true : false;
+        }
+
+        number = 1709;
+
+        log(number + " is third digit 7: " + checkThirdDigitIs7(number));
+
+
+        /* 5. Write a boolean expression for finding if the bit 3
+           (counting from 0) of a given integer is 1 or 0. */
+
+        number = 15;
+
+        log("");
+        log(number + " to binary: " + number.toString(2));
+
+        log("Bit 3 (counting from 0) in number " + number + " is: " + (((1 << 3) & number) != 0 ? 1 : 0));
+
+
+        /* 6. Write an expression that checks if given print (x,  y) is within a circle K(O, 5). */
+
+        var point = { "x": 0, "y": 1 };
+        log("");
+        log("point x = " + point.x + "; y = " + point.y + ";");
+        log("point is in circle whit radius 5: " + ((point.x * point.x) + (point.y * point.y) <= 25));
+
+
+        /* 7. Write an expression that checks if given positive integer number
+           n (n ≤ 100) is prime. E.g. 37 is prime. */
+
+        function isPrime(n) {
+            if (n <= 2 && n > 0) {
+                return true;
+            }
+
+            if (n === 0) {
+                return false;
+            }
+
+            /* An integer is prime if it is not divisible
+               by any prime less than or equal to its square root. */
+
+            var q = Math.sqrt(n) | 0;
+
+            for (var i = 2; i <= q; i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        number = 0;
+
+        log("");
+        log("Is " + number + " prime: " + isPrime(number));
+
+
+        /* 8. Write an expression that calculates trapezoid's area
+           by given sides a and b and height h. */
+
+        var trapezoid = {
+            "a": 6,
+            "b": 5,
+            "h": 3,
+        };
+        
+        trapezoid.area = function () {
+            var area = ((trapezoid.a + trapezoid.b) * trapezoid.h) / 2;
+
+            return area;
+        }
+
+        log("");
+        log("trapetzoid area is: " + trapezoid.area());
+
+        
+        /* 9. Write an expression that checks for given point (x, y)
+           if it is within the circle K( (1,1), 3) and out of the rectangle
+           R(top=1, left=-1, width=6, height=2). */
+
+        point.x = 1;
+        point.y = 2;
+
+        function isPointInCircleOutRectangle(point) {
+            var isTrue = false;
+            var x = point.x - 1;
+            var y = point.y - 1;
+            var radius = 3;
+
+            var hipotenuza = Math.sqrt((x * x) + (y * y));
+
+            if (hipotenuza > radius) {
+                return false;
+            }
+            else {
+
+                if (point.x < -1 || point.x > 5 || point.y > 1 || point.y < -1) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        log("");
+        log("Is in circle and out rectangle: " + isPointInCircleOutRectangle(point));
+    </script>
+</body>
+</html>

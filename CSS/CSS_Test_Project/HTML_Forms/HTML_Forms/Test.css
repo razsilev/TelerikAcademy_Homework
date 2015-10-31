@@ -1,0 +1,44 @@
+﻿body {
+    background-color: rgba(255,0,0,0.3);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.first {
+    position: relative;
+    
+}
+
+
+
+.first > li {
+    display: inline-block;
+}
+
+.second, .third {
+    display: none;
+}
+
+.first > li:hover > ul{
+    display: block;
+    position: absolute;
+    border: 1px solid red;
+}
+
+.second > li {
+    position: relative;
+}
+
+.second > li:hover > ul {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding-left: 5px;
+}

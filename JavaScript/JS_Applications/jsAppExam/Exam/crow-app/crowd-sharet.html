@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Crowd share</title>
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Page mast be on server!</h1>
+    <article>
+        <label>login user: </label>
+        <label id="login-user"></label>
+    </article>
+    <div id="user-form">
+        <label>user name: </label>
+        <input type="text" id="user-name" />
+        <label>password:</label>
+        <input type="password" id="password" />
+        <button id="register-btn">register</button>
+        <button id="login-btn">logIN</button>
+        <button id="logout-btn">logOUT</button>
+    </div>
+    <div id="user-setings">
+        <label>posts per page: </label>
+        <label id="posts-number"></label>
+        <input type="text" id="get-posts-per-page" />
+        <br />
+        <label>sorting type: </label>
+        <input type="radio" name="sortingtype" checked="checked" id="ascedenting" class="radio" />
+        <label for="ascedenting">ascedenting </label>
+        <input type="radio" name="sortingtype" id="descedenting" class="radio" />
+        <label for="descedenting">descedenting </label>
+        <br />
+        <label>sort by: </label>
+        <input type="radio" name="date-title" checked="checked" id="date" class="radio" />
+        <label for="date">date </label>
+        <input type="radio" name="date-title" id="title" class="radio" />
+        <label for="title">title </label>
+        <button id="sortbtn">SORT</button>
+    </div>
+    <section>
+        <h2>Crowd share</h2>
+        <article id="posts">
+            <ul id="posts-container"></ul>
+            <div id="pages-links-container">
+                <em>Pages: </em>
+            </div>
+        </article>
+        <article id="message">
+            <input type="text" id="title-input" placeholder="title: ..." />
+            <label id="post-send" style="display: none">POST is SUCCESSFUL send!</label>
+            <div id="message-container">
+                <textarea id="user-text" placeholder="post: ..."></textarea>
+            </div>
+            <div id="button">
+                <button id="send">SEND</button>
+            </div>
+        </article>
+    </section>
+    <script type="text/x-handlebars-template" id="item-template">
+        {{#posts}}
+        <li>
+            <h3>title: {{{title}}}</h3>
+            <div>{{{body}}}</div>
+            <p>user: {{{this.user.username}}}</p>
+            <p>date: {{{postDate}}}</p>
+        </li>
+        {{/posts}}
+    </script>
+    <script src="scripts/libs/require-js-2-1-14.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

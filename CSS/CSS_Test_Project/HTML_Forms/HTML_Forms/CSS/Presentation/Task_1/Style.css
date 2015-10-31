@@ -1,0 +1,17 @@
+﻿p {
+    color: #0094ff;
+    font-family: Consolas;
+}
+
+.firstLeter {
+    font-family: Edwardian Script ITC;
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+section {
+    width: 800px;
+}

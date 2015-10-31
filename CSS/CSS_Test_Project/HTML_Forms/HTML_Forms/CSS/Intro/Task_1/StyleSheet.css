@@ -1,0 +1,45 @@
+﻿body {
+    background: #616f79;
+    font-family: Calibri;
+}
+
+td, p {
+    margin: 0;
+    padding: 0;
+}
+
+td {
+    border: 0px dashed blue;
+    line-height: 2em;
+}
+
+h1 {
+    color: #85919a;
+}
+
+tr td:first-of-type{
+    vertical-align: top;
+    color: #ccd1d3;
+    font-style: italic;
+    padding-right: 25px;
+}
+
+#secondTd {
+    line-height: 1.1em;
+}
+
+.red {
+    color: red;
+}
+
+.grey {
+    color: #e7e9ea;
+}
+
+.blue {
+    color: #85919a;
+}
+
+.orange {
+    color: orange;
+}

@@ -1,0 +1,24 @@
+extends ../layout
+block main-content
+    .container
+        h3 Customer Details
+        form.form-horizontal(id='form', method='post', action='/customer/create', enctype='multipart/form-data')
+            .form-group
+                label.control-label.col-xs-2(for='Name') Name
+                .col-xs-6
+                    input.form-control(type='text', id='name', name='name')
+            .form-group
+                label.control-label.col-xs-2(for='email') Email
+                .col-xs-6
+                    input.form-control(type='email', id='email', name='email')
+            .form-group
+                label.control-label.col-xs-2(for='telephone') Telephone
+                .col-xs-6
+                    input.form-control(type='tel', id='telephone', name='telephone')
+            .form-group
+                label.control-label(for='picture') Picture
+                input.btn.btn-info(type='file', id='picture', name='picture')
+            input.btn.btn-success(type='submit', value='Add Customer')
+
+
+

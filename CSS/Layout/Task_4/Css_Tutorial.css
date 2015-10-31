@@ -1,0 +1,157 @@
+﻿body {
+}
+
+div#content {
+    padding-top: 5px;
+    overflow: auto;
+    font-family: Calibri;
+    background-color: #e6eced;
+    border: 2px solid gray;
+    width: 890px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    width: 160px;
+    border: 0px solid red;
+    padding-left: 5px;
+}
+
+    nav header h1 {
+        display: inline-block;
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    nav header img {
+        position: relative;
+        top: 5px;
+    }
+
+    nav section {
+        margin-top: 20px;
+    }
+
+        nav section ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            nav section ul li h2 {
+                color: darkred;
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+            }
+
+            nav section ul li a {
+                color: black;
+                text-decoration: none;
+            }
+
+                nav section ul li a:hover {
+                    text-decoration: underline;
+                }
+
+section.content {
+    width: 510px;
+    border: 2px solid gray;
+    padding: 5px;
+    background-color: white;
+}
+
+nav, section.content, aside {
+    float: left;
+}
+
+    section.content button {
+        width: 130px;
+    }
+
+    section.content header {
+        border-bottom: 2px solid gray;
+        padding-bottom: 10px;
+    }
+
+    section.content article h2 {
+        background-color: gray;
+        color: white;
+        padding-left: 5px;
+    }
+
+    section.content article div {
+        display: inline-block;
+        width: 390px;
+        border: 0px solid gray;
+        padding-left: 15px;
+    }
+
+    section.content article img {
+        margin-bottom: 55px;
+    }
+
+    section.content article div h3 {
+        margin-top: 0px;
+    }
+
+    section.content article div p {
+        font-weight: bold;
+    }
+
+    section.content article a {
+        color: darkred;
+    }
+
+    section.content footer {
+        margin-top: 15px;
+        margin-bottom: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+    }
+
+aside {
+    margin-left: 5px;
+    background-color: white;
+}
+
+    aside section {
+        border: 1px solid gray;
+        width: 190px;
+        margin-bottom: 1px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+        aside section h2 {
+            text-align: center;
+            background-color: gray;
+            color: white;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        aside section input[type=text] {
+            width: 120px;
+            border: 1px solid #7cc7fe;
+        }
+
+        aside section a {
+            display: block;
+            color: darkred;
+        }
+
+        aside section div {
+            display: inline-block;
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid gray;
+            background-color: #c8e7ff;
+            color: #00aefa;
+            padding-top: 10px;
+            margin-top: 5px;
+        }

@@ -1,0 +1,69 @@
+﻿body,
+html,
+div,
+img,
+ul,
+li,
+span,
+a {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #000;
+  font-size: 16px;
+  font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+}
+body div#wrapper {
+  width: 960px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+body div#wrapper > div {
+  width: 690px;
+  padding: 10px;
+  padding-right: 0;
+  border-radius: 5px;
+  background-color: #ccc;
+  overflow: auto;
+}
+body div#wrapper > div div.holder {
+  float: left;
+}
+body div#wrapper > div div.holder img {
+  width: 550px;
+  border-radius: 5px;
+}
+body div#wrapper > div div.playlist {
+  float: left;
+}
+body div#wrapper > div div.playlist ul {
+  list-style-type: none;
+}
+body div#wrapper > div div.playlist ul li {
+  width: 120px;
+  margin: 5px 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+}
+body div#wrapper > div div.playlist ul li:hover span {
+  text-decoration: underline;
+}
+body div#wrapper > div div.playlist ul li a {
+  display: block;
+  padding-left: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+body div#wrapper > div div.playlist ul li a img {
+  display: block;
+  margin-left: 12px;
+  border-radius: 10px;
+}
+body div#wrapper > div div.playlist ul li a img span {
+  display: block;
+  padding-left: 103px;
+}
+/*# sourceMappingURL=task2.css.map */

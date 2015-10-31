@@ -1,0 +1,22 @@
+﻿1.  What does the XML language represents? What does it used for? 
+		XML (eXtensible Markup Language)
+		Universal language (notation) for describing structured data using text with tags
+		The data is stored together with the meta-data about it
+		Used to describe other languages (formats) for data representation
+		XML looks like HTML
+		Text based language, uses tags and attributes
+
+----------------------------------------
+3.  What does the namespaces represents in the XML documents? What are they used for? 
+    Namespaces in XML documents allow using different tags with the same name.
+
+
+
+
+
+
+
+
+
+
+		

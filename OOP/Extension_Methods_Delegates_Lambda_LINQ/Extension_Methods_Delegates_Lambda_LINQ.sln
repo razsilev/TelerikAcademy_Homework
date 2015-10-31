@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01ExtensionMethodSubstring", "ExtensionMethodSubstring\01ExtensionMethodSubstring.csproj", "{25CE10B0-064B-46A3-8466-CB6B6FEDCD6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03FindStudents", "03FindStudents\03FindStudents.csproj", "{04461EE2-C501-4F25-901E-4EA9A6180D86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04SearchStudentsByAge", "04SearchStudentsByAge\04SearchStudentsByAge.csproj", "{947CF3AC-A6C8-482E-8B24-C46E743D332B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05SortStudents", "05SortStudents\05SortStudents.csproj", "{DFC298D6-0EAD-4F3F-8014-098E37B0F048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06FindNumbersDividableBy7And3", "06FindNumbersDividableBy7And3\06FindNumbersDividableBy7And3.csproj", "{71D43D5E-EE74-4E80-8C57-5D4C548A3A62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07UseTimer", "07UseTimer\07UseTimer.csproj", "{419FE9DF-A669-40F3-B34A-1F536D055E1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02IEnumerableTest", "02IEnumerableTest\02IEnumerableTest.csproj", "{35B3B0B9-0C99-4B33-82B7-9BD4278F7149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08ImplementMyEvent", "08ImplementMyEvent\08ImplementMyEvent.csproj", "{F11131BD-C668-4F83-8FA0-E968C3D1EF2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25CE10B0-064B-46A3-8466-CB6B6FEDCD6F}.Debug|x86.ActiveCfg = Debug|x86
+		{25CE10B0-064B-46A3-8466-CB6B6FEDCD6F}.Debug|x86.Build.0 = Debug|x86
+		{25CE10B0-064B-46A3-8466-CB6B6FEDCD6F}.Release|x86.ActiveCfg = Release|x86
+		{25CE10B0-064B-46A3-8466-CB6B6FEDCD6F}.Release|x86.Build.0 = Release|x86
+		{04461EE2-C501-4F25-901E-4EA9A6180D86}.Debug|x86.ActiveCfg = Debug|x86
+		{04461EE2-C501-4F25-901E-4EA9A6180D86}.Debug|x86.Build.0 = Debug|x86
+		{04461EE2-C501-4F25-901E-4EA9A6180D86}.Release|x86.ActiveCfg = Release|x86
+		{04461EE2-C501-4F25-901E-4EA9A6180D86}.Release|x86.Build.0 = Release|x86
+		{947CF3AC-A6C8-482E-8B24-C46E743D332B}.Debug|x86.ActiveCfg = Debug|x86
+		{947CF3AC-A6C8-482E-8B24-C46E743D332B}.Debug|x86.Build.0 = Debug|x86
+		{947CF3AC-A6C8-482E-8B24-C46E743D332B}.Release|x86.ActiveCfg = Release|x86
+		{947CF3AC-A6C8-482E-8B24-C46E743D332B}.Release|x86.Build.0 = Release|x86
+		{DFC298D6-0EAD-4F3F-8014-098E37B0F048}.Debug|x86.ActiveCfg = Debug|x86
+		{DFC298D6-0EAD-4F3F-8014-098E37B0F048}.Debug|x86.Build.0 = Debug|x86
+		{DFC298D6-0EAD-4F3F-8014-098E37B0F048}.Release|x86.ActiveCfg = Release|x86
+		{DFC298D6-0EAD-4F3F-8014-098E37B0F048}.Release|x86.Build.0 = Release|x86
+		{71D43D5E-EE74-4E80-8C57-5D4C548A3A62}.Debug|x86.ActiveCfg = Debug|x86
+		{71D43D5E-EE74-4E80-8C57-5D4C548A3A62}.Debug|x86.Build.0 = Debug|x86
+		{71D43D5E-EE74-4E80-8C57-5D4C548A3A62}.Release|x86.ActiveCfg = Release|x86
+		{71D43D5E-EE74-4E80-8C57-5D4C548A3A62}.Release|x86.Build.0 = Release|x86
+		{419FE9DF-A669-40F3-B34A-1F536D055E1A}.Debug|x86.ActiveCfg = Debug|x86
+		{419FE9DF-A669-40F3-B34A-1F536D055E1A}.Debug|x86.Build.0 = Debug|x86
+		{419FE9DF-A669-40F3-B34A-1F536D055E1A}.Release|x86.ActiveCfg = Release|x86
+		{419FE9DF-A669-40F3-B34A-1F536D055E1A}.Release|x86.Build.0 = Release|x86
+		{35B3B0B9-0C99-4B33-82B7-9BD4278F7149}.Debug|x86.ActiveCfg = Debug|x86
+		{35B3B0B9-0C99-4B33-82B7-9BD4278F7149}.Debug|x86.Build.0 = Debug|x86
+		{35B3B0B9-0C99-4B33-82B7-9BD4278F7149}.Release|x86.ActiveCfg = Release|x86
+		{35B3B0B9-0C99-4B33-82B7-9BD4278F7149}.Release|x86.Build.0 = Release|x86
+		{F11131BD-C668-4F83-8FA0-E968C3D1EF2B}.Debug|x86.ActiveCfg = Debug|x86
+		{F11131BD-C668-4F83-8FA0-E968C3D1EF2B}.Debug|x86.Build.0 = Debug|x86
+		{F11131BD-C668-4F83-8FA0-E968C3D1EF2B}.Release|x86.ActiveCfg = Release|x86
+		{F11131BD-C668-4F83-8FA0-E968C3D1EF2B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

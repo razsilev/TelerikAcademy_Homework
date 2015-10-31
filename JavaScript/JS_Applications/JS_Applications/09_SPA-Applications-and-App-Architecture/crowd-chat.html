@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Crowd Chat</title>
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Page mast be on server!</h1>
+    <label>Enter posts author name: </label>
+    <input type="text" id="input-name" />
+    <button id="set-name-btn">set name</button>
+        <label>user name:</label>
+        <strong id="user-name"></strong>
+    <section>
+        <h2>Crowd chat</h2>
+        <article id="posts">
+            <ul id="posts-container"></ul>
+        </article>
+        <article id="message">
+            <div id="message-container">
+                <textarea id="user-text"></textarea>
+            </div>
+            <div id="button">
+                <button id="send">SEND</button>
+            </div>
+        </article>
+    </section>
+    <script type="text/x-handlebars-template" id="item-template">
+        {{#posts}}
+        <li>
+            <h3>{{{by}}}</h3>
+            <div>{{{text}}}</div>
+        </li>
+        {{/posts}}
+    </script>
+    <script src="scripts/libs/require-js-2-1-14.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

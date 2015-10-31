@@ -1,0 +1,43 @@
+﻿body {
+    background-color: black;
+    font-family: Calibri;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+}
+
+td {
+    border-right: 1px solid #acabab;
+}
+
+    td:last-of-type, th:last-of-type {
+        border-right: none;
+    }
+
+th {
+    border-bottom: 1px solid #756969;
+    border-right: 1px solid #756969;
+    color: white;
+    background-color: #08c821;
+    text-align: left;
+    font-weight: normal;
+}
+
+.white {
+    background-color: white;
+}
+
+.grey {
+    background-color: #f1ebcb;
+}
+
+img.flag {
+    float: left;
+    margin: 0px;
+    margin-right: 5px;
+}

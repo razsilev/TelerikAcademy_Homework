@@ -1,0 +1,58 @@
+﻿<Window x:Class="AppControl.CreateTaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CreateSingleTask" Height="240.015" Width="505.493" WindowStartupLocation="CenterOwner">
+    <Canvas Margin="0,0,-8,-4"
+            Background="{StaticResource GridBrush}">
+        <Button x:Name="addButton"
+                Content="Add"
+                Width="120"
+                Canvas.Left="30" 
+                Canvas.Top="121" 
+                Background="{StaticResource ButtonBrush}"
+                 Style="{DynamicResource RoundedButton}"
+                Click="OnAddButtonClick">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+        <Button x:Name="cancelButton"
+                Content="Cancel"
+                Width="120"
+                Canvas.Left="30" 
+                Canvas.Top="152" 
+                 Background="{StaticResource ButtonBrush}"
+                 Style="{DynamicResource RoundedButton}"
+                Click="OnCancelButtonClick" >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+        <TextBox x:Name="TextBoxName"  
+                 Text="Task name." 
+                 TextWrapping="Wrap"
+                 Canvas.Left="10" 
+                 Canvas.Top="15" Width="172" Height="41"
+                 Background="#FFC9DCD9" BorderBrush="#FF7E8E9E" Foreground="#FF030708">
+        </TextBox>
+
+        <TextBox x:Name="TextBoxDescription"
+                   Text="Description"
+                   TextWrapping="Wrap"
+                   Canvas.Left="200" 
+                   Canvas.Top="15" 
+                   Height="155" 
+                   Width="270" 
+                   Background="#FFC9DCD9" BorderBrush="#FF7E8E9E" Foreground="#FF030708">
+        </TextBox>
+
+        <ComboBox x:Name="ComboBoxPriority"
+            Canvas.Left="10" 
+            Canvas.Top="73" 
+            Width="172"
+            Background="#FFC9DCD9" Foreground="#FF030708"/>
+
+    </Canvas>
+</Window>

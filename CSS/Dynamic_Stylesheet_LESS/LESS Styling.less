@@ -1,0 +1,272 @@
+﻿html, body, header, div, h1, h2, img, form, label, input, ul, li,
+nav, a, section, article, footer, p, aside, strong, em {
+    margin: 0;
+    padding: 0;
+}
+
+section, header, nav, aside, footer, article {
+    display: block;
+}
+
+.clearFix() {
+    zoom: 1;
+
+    &:after {
+        display: block;
+        content: "";
+        height: 0;
+        clear: both;
+    }
+}
+
+
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos) {
+    background: @from-color; /* Old browsers */
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    background-repeat: no-repeat;
+}
+
+body {
+
+    @default-bg-color: rgb(146, 21, 242);
+
+    .linear-gradient(rgb(212, 147, 254), 0%, @default-bg-color, 15%);
+    font-size: 14px;
+    color: #fff;
+
+    /*min-width: 1200px;*/
+
+    header {
+
+        div#header-container {
+            .clearFix();
+
+            div#logo-container {
+                margin-top: 20px;
+                margin-left: 12px;
+                float: left;
+
+                img {
+                    width: 305px;
+                }
+            }
+
+            div#reg-form-container {
+                margin-top: 20px;
+                margin-right: 5%;
+                float: right;
+
+                form {
+
+                    div {
+                        text-align: right;
+                        width: 240px;
+
+                        input {
+                            padding: 2px 5px 2px 5px;
+                            width: 140px;
+                            margin-bottom: 10px;
+                            color: #fff;
+                            border: 1px solid #000;
+                            border-radius: 10px;
+                            background-color: rgb(179, 94, 243);
+                        }
+
+                        label {
+                            margin-right: 10px;
+                            margin-left: 5px;
+                            margin-bottom: 15px;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                button#btn-register {
+                    height: 30px;
+                    width: 80px;
+                    margin-left: 5px;
+                    border-radius: 10px;
+                    background-color: rgb(179, 94, 243);
+                    color: #fff;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        nav {
+            display: inline-block;
+            width: 75%;
+            margin: 10px 20px 20px 30px;
+            padding: 12px;
+            border: 1px solid #000;
+            border-radius: 15px;
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    float: left;
+                    margin: 0;
+
+                    a {
+                        text-decoration: none;
+                        padding: 0 10px 0 10px;
+                        color: #fff;
+                        font: 1.2em normal Arial;
+
+                        &.selected {
+                            font-weight: bold;
+                        }
+                    }
+
+                    &:hover > a {
+                        text-decoration: underline;
+                        color: #a8a8a8;
+
+                        & + ul {
+                            display: block;
+                        }
+                    }
+
+                    ul.sub-nav-list {
+                        position: absolute;
+                        display: none;
+                        background-color: rgba(179, 94, 243, 0.9);
+                        border-radius: 5px;
+                    }
+
+                    ul {
+
+                        li {
+                            float: none;
+                            margin: 0 15px;
+                            padding: 10px 0;
+                            border-bottom: 1px solid #000;
+
+                            &:last-of-type {
+                                border-bottom: none;
+                            }
+
+                            & > a {
+                                font-size: 1.2em;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        float: left;
+        width: 70%;
+
+        article {
+            margin: 15px 0px 25px 17px;
+            padding: 22px 20px 23px 17px;
+            border: 1px solid #000;
+            border-radius: 15px;
+
+            h1 {
+                margin-left: 5px;
+                font-size: 1.3em;
+            }
+
+            p {
+                margin-top: 5px;
+                font-size: 12px;
+            }
+
+            footer {
+                text-align: right;
+
+                p {
+                    font-size: 14px;
+
+                    a {
+                        text-decoration: none;
+                        color: rgb(212, 163, 248);
+                    }
+                }
+            }
+        }
+    }
+
+    aside {
+        float: left;
+        /*width: 320px;*/
+        width: 25%;
+        margin-left: 40px;
+
+        h2 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        & > ul {
+
+            & > li {
+                margin-top: 15px;
+                padding: 15px;
+                border: 1px solid #000;
+                border-radius: 5px;
+
+                a {
+                    text-decoration: none;
+                    color: #aaa;
+                }
+
+                strong {
+                    color: rgb(204, 204, 209);
+                }
+
+                em {
+                    color: rgb(204, 204, 209);
+                }
+
+                &:first-of-type {
+                    margin-top: 30px;
+                }
+
+                li {
+                    margin-left: 10px;
+                    background: url(images/li-dot.png) no-repeat;
+                    background-position: 0 50%;
+                    padding-left: 25px;
+                }
+
+                p {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    footer {
+        zoom: 1;
+        text-align: center;
+        margin-bottom: 25px;
+
+        &:before {
+            display: block;
+            content: "";
+            clear: both;
+            height: 0;
+        }
+
+        p {
+            font-weight: bold;
+        }
+    }
+}

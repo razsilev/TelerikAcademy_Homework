@@ -1,0 +1,22 @@
+Connection string for "Company" database: (location)
+Exam database\DatabaseFirst\DatabaseFirstFillDataProject\FillRandomData\App.config
+Exam database\DatabaseFirst\DatabaseFirstFillDataProject\DatabaseFirst.Data\App.config
+I use msSQL server "."  Not EXPRESS!
+
+Connection string for "Cars" database: (location)
+Exam database\CodeFirst\CarStore.Importer\App.config
+
+Relationships for "Company" database: (first-table : second-table - type of relationship)
+Employees to Reports 1 to many
+Managers to Employees 1 to many
+Employees to Projects many to many
+Departments to Employees 1 to many
+
+Relationships for "Cars" database: (first-table : second-table - type of relationship)
+Manufacturers to Cars 1 to many
+Dealers to Cars 1 to many
+Dealers to Citys 1 to many
+
+Query files: (file location in solution)
+Exam database\DatabaseFirst\CompanyDbPicAndBackupsAndQuerys
+In this folder are all Query files and image of database and backUP

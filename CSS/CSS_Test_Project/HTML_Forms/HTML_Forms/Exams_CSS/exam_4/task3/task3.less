@@ -1,0 +1,168 @@
+﻿body, html, div, img, ul, li, a, hgroup, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos) {
+    background: @from-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+}
+
+.clearFix() {
+    zoom: 1;
+
+    &:after {
+        display: block;
+        content: "";
+        height: 0;
+        clear: both;
+    }
+}
+
+body {
+    color: #000;
+    font-size: 16px;
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+
+    div#wrapper {
+        width: 960px;
+        padding-top: 20px;
+        padding-left: 20px;
+
+        & > div {
+            position: relative;
+            float: left;
+            width: 144px;
+            height: 260px;
+            padding-left: 4px;
+            border: 2px solid #d3d7da;
+            border-right: none;
+            border-left: none;
+
+            &:nth-of-type(2n) {
+                height: 280px;
+                border: 2px solid #d3d7da;
+            }
+
+            &:last-of-type {
+                border-right: 2px solid #d3d7da;
+            }
+
+            &:first-of-type {
+                border-left: 2px solid #d3d7da;
+            }
+
+            p {
+                margin-top: 26px;
+                margin-right: 5px;
+            }
+
+            .yellowBox {
+                border: 1px solid yellow;
+                background-color: #FFFFDD;
+                margin-right: 4px;
+
+                a {
+                    display: inline-block;
+                }
+            }
+
+            div {
+                margin-top: 5px;
+
+                a {
+                    display: block;
+                    color: #c72d2f;
+                    text-decoration: none;
+
+                    span {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            hgroup {
+
+                h3 {
+                    font-size: 1.0em;
+                    position: absolute;
+                    top: 10px;
+                    left: 44px;
+                }
+
+                h2 {
+                    font-size: 1.0em;
+                    position: absolute;
+                    top: 30px;
+                    left: 44px;
+                }
+            }
+
+            &:nth-of-type(1) hgroup {
+
+                &:before {
+                    position: relative;
+                    top: 14px;
+                    left: 0;
+                    content: url('imgs/install.png');
+                }
+            }
+
+            &:nth-of-type(2) hgroup {
+
+                &:before {
+                    position: relative;
+                    top: 14px;
+                    left: 0;
+                    content: url('imgs/tuneUp.png');
+                }
+            }
+
+            &:nth-of-type(3) hgroup {
+
+                &:before {
+                    position: relative;
+                    top: 14px;
+                    left: 0;
+                    content: url('imgs/manage.png');
+                }
+            }
+
+            &:nth-of-type(4) hgroup {
+
+                &:before {
+                    position: relative;
+                    top: 14px;
+                    left: 0;
+                    content: url('imgs/openSource.png');
+                }
+            }
+
+            &:nth-of-type(5) hgroup {
+
+                &:before {
+                    position: relative;
+                    top: 14px;
+                    left: 0;
+                    content: url('imgs/twitter.png');
+                }
+            }
+
+            &:nth-of-type(6) hgroup {
+
+                &:before {
+                    position: relative;
+                    top: 14px;
+                    left: 0;
+                    content: url('imgs/about.png');
+                }
+            }
+        }
+    }
+}

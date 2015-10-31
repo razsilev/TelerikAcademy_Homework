@@ -1,0 +1,5 @@
+Friends|Desislava Ivanova|0885331984|dessislava.ivanova@gmail.com|11.1.1987|1.png
+Friends|Stefan Mirevski|0888888888|stefan.mirevski@gmail.com||4.jpg
+Business|Gencho Razsilev|0895738703|grasilev@gmail.com||2.jpg
+Business|Nikolay Vatashki|0988927277|nvatashki@gmail.com||3.jpg
+Other|Rossi|0897906423|riordanova@gmail.com||5.jpg

@@ -1,0 +1,19 @@
+﻿body, section, p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #0094ff;
+    font-family: Consolas;
+    padding: 20px 10px 0 5px;
+}
+
+    p:first-letter {
+        font-family: 'Edwardian Script ITC';
+        font-size: 2rem;
+    }
+
+    p:first-line {
+        font-weight: bold;
+    }

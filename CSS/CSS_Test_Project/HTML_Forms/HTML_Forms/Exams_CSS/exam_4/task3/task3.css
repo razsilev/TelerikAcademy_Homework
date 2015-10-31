@@ -1,0 +1,116 @@
+﻿body,
+html,
+div,
+img,
+ul,
+li,
+a,
+hgroup,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #000;
+  font-size: 16px;
+  font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+}
+body div#wrapper {
+  width: 960px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+body div#wrapper > div {
+  position: relative;
+  float: left;
+  width: 144px;
+  height: 260px;
+  padding-left: 4px;
+  border: 2px solid #d3d7da;
+  border-right: none;
+  border-left: none;
+}
+body div#wrapper > div:nth-of-type(2n) {
+  height: 280px;
+  border: 2px solid #d3d7da;
+}
+body div#wrapper > div:last-of-type {
+  border-right: 2px solid #d3d7da;
+}
+body div#wrapper > div:first-of-type {
+  border-left: 2px solid #d3d7da;
+}
+body div#wrapper > div p {
+  margin-top: 26px;
+  margin-right: 5px;
+}
+body div#wrapper > div .yellowBox {
+  border: 1px solid yellow;
+  background-color: #FFFFDD;
+  margin-right: 4px;
+}
+body div#wrapper > div .yellowBox a {
+  display: inline-block;
+}
+body div#wrapper > div div {
+  margin-top: 5px;
+}
+body div#wrapper > div div a {
+  display: block;
+  color: #c72d2f;
+  text-decoration: none;
+}
+body div#wrapper > div div a span {
+  text-transform: uppercase;
+}
+body div#wrapper > div hgroup h3 {
+  font-size: 1.0em;
+  position: absolute;
+  top: 10px;
+  left: 44px;
+}
+body div#wrapper > div hgroup h2 {
+  font-size: 1.0em;
+  position: absolute;
+  top: 30px;
+  left: 44px;
+}
+body div#wrapper > div:nth-of-type(1) hgroup:before {
+  position: relative;
+  top: 14px;
+  left: 0;
+  content: url('imgs/install.png');
+}
+body div#wrapper > div:nth-of-type(2) hgroup:before {
+  position: relative;
+  top: 14px;
+  left: 0;
+  content: url('imgs/tuneUp.png');
+}
+body div#wrapper > div:nth-of-type(3) hgroup:before {
+  position: relative;
+  top: 14px;
+  left: 0;
+  content: url('imgs/manage.png');
+}
+body div#wrapper > div:nth-of-type(4) hgroup:before {
+  position: relative;
+  top: 14px;
+  left: 0;
+  content: url('imgs/openSource.png');
+}
+body div#wrapper > div:nth-of-type(5) hgroup:before {
+  position: relative;
+  top: 14px;
+  left: 0;
+  content: url('imgs/twitter.png');
+}
+body div#wrapper > div:nth-of-type(6) hgroup:before {
+  position: relative;
+  top: 14px;
+  left: 0;
+  content: url('imgs/about.png');
+}
+/*# sourceMappingURL=task3.css.map */

@@ -1,0 +1,91 @@
+﻿.clearFix {
+    zoom: 1;
+}
+
+    .clearFix:after {
+        display: block;
+        content: "";
+        height: 0;
+        clear: both;
+    }
+
+    body div {
+        font-family: Calibri;
+    }
+
+body header {
+    text-align: center;
+    border-bottom: 2px solid gray;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+    body header a {
+        display: inline-block;
+        color: #4bd5fb;
+    }
+
+    body header h1 {
+        font-family: Arial;
+        margin-bottom: 15px;
+    }
+
+body > div {
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 0px solid blue;
+}
+
+div section, section article, section#table article div, section#table article img {
+    display: inline-block;
+}
+
+section#table {
+    width: 610px;
+    border: 2px solid gray;
+    padding: 5px;
+}
+
+    section#table article div {
+        position: relative;
+        top: 20px;
+    }
+
+        section#table article div#line {
+            top: -15px;
+            left: 70px;
+        }
+
+    section#table article fieldset {
+        width: 270px;
+        height: 160px;
+        border: 2px solid gray;
+    }
+
+    section#table article fieldset legend {
+        padding-left: 5px;
+        padding-right: 10px;
+        margin-left: 60px;
+    }
+
+    div section#selectValue {
+        position: relative;
+        top: -110px;
+    }
+
+    div section#selectValue div {
+        height: 80px;
+        width: 180px;
+        text-align: center;
+        border: 0px solid gray;
+    }
+
+    div section#selectValue div span {
+        margin-left: 20px;
+    }
+
+    div section#selectValue div input {
+        width: 150px;
+    }

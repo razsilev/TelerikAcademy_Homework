@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test Page</title>
+</head>
+<body>
+    <script>
+
+        function Solve(input) {
+            var length = input.length,
+                arr = input.map(Number),
+                maxSum = arr[1],
+                currentSum = 0,
+                i = 0;
+
+            for (i = 1; i < length; i += 1) {
+                currentSum = arr[i] + Math.max(currentSum, 0);
+
+                maxSum = Math.max(maxSum, currentSum);
+            }
+
+            return maxSum;
+        }
+
+        var input = [9, -9, -8, -8, -7, -6, -5, -1, -7, -6];
+        //var input = [9, -9, 3];
+        //var input = [6, 1, 3, -5, 8, 7, -6];
+        
+        console.log(Solve(input));
+        arr = [1, 2, 3]; console.dir(arr.join('@ '));
+    </script>
+</body>
+</html>

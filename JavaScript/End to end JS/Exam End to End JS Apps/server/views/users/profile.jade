@@ -1,0 +1,27 @@
+extends ../shared/layout
+block main-content
+    form(method="post")
+        h3 Profile data:
+        br
+        label(for="phoneNumber") Phone number
+        input(id="phoneNumber" class="form-control" type="text" name="phoneNumber" placeholder="phone number" value="#{currentUser.phoneNumber}")
+        br
+        label Change your Image
+        input(type='file', id='picture', name='picture')
+        br
+        br
+        h3 Links to your profiles in:
+        br
+        label(for="facebook") Facebook
+        input(id="facebook" class="form-control" type="text" name="facebook" placeholder="Facebook" value="#{currentUser.facebook}")
+        br
+        label(for="twitter") Twitter
+        input(id="twitter" class="form-control" type="text" name="twitter" placeholder="Twitter" value="#{currentUser.twitter}")
+        br
+        label(for="linkedIn") LinkedIn
+        input(id="linkedIn" class="form-control" type="text" name="linkedIn" placeholder="LinkedIn" value="#{currentUser.linkedIn}")
+        br
+        label(for="google") Google+
+        input(id="google" class="form-control" type="text" name="google" placeholder="Google+" value="#{currentUser.google}")
+        br
+        input(type="submit" class="btn btn-lg" value="Profile")

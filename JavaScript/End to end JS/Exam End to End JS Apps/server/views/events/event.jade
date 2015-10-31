@@ -1,0 +1,30 @@
+extends ../shared/layout
+block main-content
+    form(method="post")
+        h3 Create Event:
+        br
+        label(for="title") Title
+        input(id="title", class="form-control", type="text", name="title", required, placeholder="Title")
+        br
+        label(for="description") Description
+        input(id="description", class="form-control", type="text", name="description", required, placeholder="Description")
+        br
+        label(for="category") Category
+        input(id="category", class="form-control", type="text", name="category", required, placeholder="Category")
+        br
+        label(for="initiative") Initiative
+        input(id="initiative", class="form-control", type="text", name="type.initiative", required, placeholder="initiative")
+        br
+        label(for="season") Season
+        input(id="season" class="form-control", type="text", name="season", required, placeholder="season")
+        br
+        label(for="creatorsNames") Creators Names
+        input(id="creatorsNames", class="form-control", type="text", name="creatorsNames", required, placeholder="creators Names")
+        br
+        label(for="phoneNumber") PhoneNumber *
+        input(id="phoneNumber", class="form-control", type="text", name="phoneNumber", required, placeholder="phoneNumber")
+        br
+        label(for="location") Location
+        input(id="location", class="form-control", type="text", name="location", placeholder="location")
+        br
+        input(type="submit" class="btn btn-lg" value="Event")

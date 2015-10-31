@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeSurfaceCalculation", "ShapeSurfaceCalculation\ShapeSurfaceCalculation.csproj", "{368212F7-CA56-414B-B1AD-19DDB60EA7DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefineExceptionClassAndTestHim", "DefineExceptionClassAndTestHim\DefineExceptionClassAndTestHim.csproj", "{5D3300AB-961E-44BD-BB6C-35465610F589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank\Bank.csproj", "{3AC3276A-5F4B-4023-85E0-D6FD2ECEA9D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{368212F7-CA56-414B-B1AD-19DDB60EA7DF}.Debug|x86.ActiveCfg = Debug|x86
+		{368212F7-CA56-414B-B1AD-19DDB60EA7DF}.Debug|x86.Build.0 = Debug|x86
+		{368212F7-CA56-414B-B1AD-19DDB60EA7DF}.Release|x86.ActiveCfg = Release|x86
+		{368212F7-CA56-414B-B1AD-19DDB60EA7DF}.Release|x86.Build.0 = Release|x86
+		{5D3300AB-961E-44BD-BB6C-35465610F589}.Debug|x86.ActiveCfg = Debug|x86
+		{5D3300AB-961E-44BD-BB6C-35465610F589}.Debug|x86.Build.0 = Debug|x86
+		{5D3300AB-961E-44BD-BB6C-35465610F589}.Release|x86.ActiveCfg = Release|x86
+		{5D3300AB-961E-44BD-BB6C-35465610F589}.Release|x86.Build.0 = Release|x86
+		{3AC3276A-5F4B-4023-85E0-D6FD2ECEA9D0}.Debug|x86.ActiveCfg = Debug|x86
+		{3AC3276A-5F4B-4023-85E0-D6FD2ECEA9D0}.Debug|x86.Build.0 = Debug|x86
+		{3AC3276A-5F4B-4023-85E0-D6FD2ECEA9D0}.Release|x86.ActiveCfg = Release|x86
+		{3AC3276A-5F4B-4023-85E0-D6FD2ECEA9D0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,50 @@
+﻿body {
+    background-color: #bdbdbe;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+nav {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+    ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    ul li:last-of-type a {
+        text-decoration: underline;
+    }
+
+section h1 {
+    text-align: left;
+    font-size: 23px;
+}
+
+footer p {
+    font-size: 11px;
+    color: #262525;
+}
+
+    footer p a {
+        text-decoration: none;
+        color: black;
+    }
+
+body > footer {
+    text-align: center;
+}
+
+/*section article:nth-child(2) {
+    display: none;
+}*/

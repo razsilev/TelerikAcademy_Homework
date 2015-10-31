@@ -1,0 +1,154 @@
+1. What database models do you know?
+- Relational model
+sqlServer, mySQL
+* The basic data structure of the relational model is the table, where information about a particular entity (say, an employee) is represented in rows (also called tuples) and columns. Thus, the "relation" in "relational database" refers to the various tables in the database; a relation is a set of tuples. The columns enumerate the various attributes of the entity (the employee's name, address or phone number, for example), and a row is an actual instance of the entity (a specific employee) that is represented by the relation. As a result, each tuple of the employee table represents various attributes of a single employee.
+- not relational
+MongoDB
+
+---------------------------------------------
+2. Which are the main functions performed by a Relational Database Management System (RDBMS)?
+- Store data and search in stored data.
+
+---------------------------------------------
+3. Define what is "table" in database terms.
+- A table is a collection of related data held in a structured format within a database. It consists of fields (columns), and rows.
+In relational databases and flat file databases, a table is a set of data elements (values) using a model of vertical columns (which are identified by their name) and horizontal rows, the cell being the unit where a row and column intersect. A table has a specified number of columns, but can have any number of rows. Each row is identified by the values appearing in a particular column subset which has been identified as a unique key index.
+
+---------------------------------------------
+4. Explain the difference between a primary and a foreign key.
+- Primary key is unique value for each row.
+  Foreign key is primary key from other table. Hi is use like pointer to record in
+  other table.
+
+---------------------------------------------  
+5. Explain the different kinds of relationships between tables in relational databases.
+- Relationship types
+	You share many relationships with members of your family. For instance, you and your mother are related. You have only one mother, but she may have several children. You and your siblings are related—you may have many brothers and sisters and, of course, they'll have many brothers and sisters as well. If you're married, both you and your spouse have a spouse—each other—but only one at a time. Database relationships are very similar in that they're associations between tables. There are three types of relationships:
+	
+	One-to-one: Both tables can have only one record on either side of the relationship. Each primary key value relates to only one (or no) record in the related table. They're like spouses—you may or may not be married, but if you are, both you and your spouse have only one spouse. Most one-to-one relationships are forced by business rules and don't flow naturally from the data. In the absence of such a rule, you can usually combine both tables into one table without breaking any normalization rules.
+	
+	One-to-many: The primary key table contains only one record that relates to none, one, or many records in the related table. This relationship is similar to the one between you and a parent. You have only one mother, but your mother may have several children.
+	
+	Many-to-many: Each record in both tables can relate to any number of records (or no records) in the other table. For instance, if you have several siblings, so do your siblings (have many siblings). Many-to-many relationships require a third table, known as an associate or linking table, because relational systems can't directly accommodate the relationship.
+	
+---------------------------------------------
+6. When is a certain database schema normalized? 
+   What are the advantages of normalized databases?
+- Normalized is when in table do not have repetition of data.
+- Advantages of normalized databases is:
+	* use less memory.
+	* easy support. When make change on data make it on one place.
+	* do not have repetition of data.
+	
+---------------------------------------------
+7. What are database integrity constraints and when are they used?
+	- Data integrity refers to maintaining and assuring the accuracy and consistency of data over its entire life-cycle,[1] and is a critical aspect to the design, implementation and usage of any system which stores, processes, or retrieves data. The term data integrity is broad in scope and may have widely different meanings depending on the specific context – even under the same general umbrella of computing. This article provides only a broad overview of some of the different types and concerns of data integrity.
+
+	Data integrity is the opposite of data corruption, which is a form of data loss. The overall intent of any data integrity technique is the same: ensure data is recorded exactly as intended (such as a database correctly rejecting mutually exclusive possibilities,) and upon later retrieval, ensure the data is the same as it was when it was originally recorded. In short, data integrity aims to prevent unintentional changes to information. Data integrity is not to be confused with data security, the discipline of protecting data from unauthorized parties.
+
+	Any unintended changes to data as the result of a storage, retrieval or processing operation, including malicious intent, unexpected hardware failure, and human error, is failure of data integrity. If the changes are the result of unauthorized access, it may also be a failure of data security. Depending on the data involved this could manifest itself as benign as a single pixel in an image appearing a different color than was originally recorded, to the loss of vacation pictures or a business-critical database, to even catastrophic loss of human life in a life-critical system.
+
+---------------------------------------------	
+8. Point out the pros and cons of using indexes in a database.
+- If indexes are used, writing to table (for example inserting rows) is
+slower, because in addition to just writing the data, MySQL needs to
+handle the index file also. This is an issue usually only if you need
+very fast inserts or you need to insert thousands of rows at the same
+time and fast.
+
+They might increase query speed or they might not. Basic rule is that if
+you are searching some specific key in a table, using indexes in that
+field will make query faster, but if you have index in some other field,
+it won't make a difference.
+
+For example if you have a table with 1000000 rows in it, and you want to
+make this query:
+
+select id,name from table_x where id=123123;
+
+You will get a lot faster results if you have index in the id field.
+
+On the other hand, if you don't have index in the id, but only in the
+name field, the query will be as slow (or even few cpu ticks slower)
+than it would be without indexes at all.
+	
+---------------------------------------------
+9. What's the main purpose of the SQL language?
+	- Perhaps the most popular and most powerful database formats are DBMS applications based on the Structured Query Language (SQL). SQL databases usually work over a client/server network architecture, providing an SQL Server to create, store, and manipulate database files, tables, fields and records, and an SQL Client interface allowing workstation users not only to design and work with database files, but also to retrieve useful and meaningful data that will help them in their everyday work.
+
+---------------------------------------------
+10. What are transactions used for? Give an example.
+- Transactions have the following four standard properties, usually referred to by the acronym ACID:
+Atomicity: ensures that all operations within the work unit are completed successfully; otherwise, the transaction is aborted at the point of failure, and previous operations are rolled back to their former state.
+Consistency: ensures that the database properly changes states upon a successfully committed transaction.
+Isolation: enables transactions to operate independently of and transparent to each other.
+Durability: ensures that the result or effect of a committed transaction persists in case of a system failure.
+
+---------------------------------------------
+11. What is a NoSQL database?
+	- NoSQL, or 'Not Only SQL', represents the new class of data management technologies designed to meet the increasing volume, velocity, and variety of data that organizations are storing, processing, and analyzing.
+	Compared to relational databases, NoSQL databases are more scalable and provide superior performance. NoSQL databases address the opportunities that the relational model does not, including:
+	Large volumes of structured, semi-structured and unstructured data
+	Agile sprints, quick iteration, and frequent code pushes
+	Flexible, easy to use object-oriented programming
+	Efficient, scale-out architecture instead of expensive, monolithic architecture
+	When considering or evaluating NoSQL solutions, the range of considerations for selecting a database can seem overwhelming. However, we found that there are 5 critical dimensions to consider when selecting the database that is the right for both your application and your business.
+
+---------------------------------------------
+12. Explain the classical non-relational data models.
+- Document store
+Main articles: Document-oriented database and XML database
+The central concept of a document store is the notion of a "document". While each document-oriented database implementation differs on the details of this definition, in general, they all assume that documents encapsulate and encode data (or information) in some standard formats or encodings. Encodings in use include XML, YAML, and JSON as well as binary forms like BSON, PDF and Microsoft Office documents (MS Word, Excel, and so on).
+- Graph[edit]
+This kind of database is designed for data whose relations are well represented as a graph (elements interconnected with an undetermined number of relations between them). The kind of data could be social relations, public transport links, road maps or network topologies, for example.
+- Key-value stores
+Key-value (KV) stores use the associative array (also known as a map or dictionary) as their fundamental data model. In this model, data is represented as a collection of key-value pairs, such that each possible key appears at most once in the collection.
+- Object-oriented database management systems (OODBMSs) combine database capabilities with object-oriented programming language capabilities. OODBMSs allow object-oriented programmers to develop the product, store them as objects, and replicate or modify existing objects to make new objects within the OODBMS. Because the database is integrated with the programming language, the programmer can maintain consistency within one environment, in that both the OODBMS and the programming language will use the same model of representation. Relational DBMS projects, by way of contrast, maintain a clearer division between the database model and the application.
+
+---------------------------------------------
+13. Give few examples of NoSQL databases and their pros and cons.
+- MongoDB
+Advantages
+Sharding and Load-Balancing:
+Sharding is the process of storing data records across multiple machines and is MongoDB's approach to meeting the demands of data growth. As the size of the data increases, a single machine may not be sufficient to store the data nor provide an acceptable read and write throughput. Sharding solves the problem with horizontal scaling. With sharding, you add more machines to support data growth and the demands of read and write operations.
+
+-From MongoDB
+
+When you have extremely large amounts of data or you need to distribute your database traffic across multiple machines for load-balancing purposes, MongoDB has heavy advantages over many classic relational databases such as MySQL.
+
+Speed 
+MongoDB queries can be much faster in some cases, especially since your data is typically all in once place and can be retrieved in a single lookup. However, this advantage only exists when your data is truly a document. When your data is essentially emulating a relational model, your code ends up performing many independent queries in order to retrieve a single document and can become much slower than a classic RDBMS.
+
+Flexibility
+MongoDB doesn't require a unified data structure across all objects, so when it is not possible to ensure that your data will all be structured consistently, MongoDB can be much simpler to use than an RDBMS. However, data consistency is a good thing, so when possible you should always attempt to ensure that a unified structure will be applied.
+
+
+Disadvantages
+No Joins
+In MongoDB there exists no possibility for joins like in a relational database. This means that when you need this type of functionality, you need to make multiple queries and join the data manually within your code (which can lead to slow, ugly code, and reduced flexibility when the structure changes).
+
+Memory Usage
+MongoDB has the natural tendency to use up more memory because it has to store the key names within each document. This is due to the fact that the data structure is not necessarily consistent amongst the data objects. 
+
+Additionally you're stuck with duplicate data since there is no possibility for joins, or slow queries due to the need to perform the join within your code. To solve the problem of duplicate data in Mongo, you can store references to objects (i.e. BSON ids), however if you find yourself doing this it indicates that the data is actually "relational", and perhaps a relational database suits your needs better.
+
+
+
+
+
+
+
+
+
+	
+
+	
+   
+
+
+
+
+
+
+
+

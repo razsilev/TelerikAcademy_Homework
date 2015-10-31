@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A7F7F4E-637B-4A1D-BC8A-5E72EF3B71BD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JS_Part_Two_Dom_UI</RootNamespace>
+    <AssemblyName>JS_Part_Two_Dom_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="06_Animations\images\mario_move1.png" />
+    <Content Include="06_Animations\images\mario_move2.png" />
+    <Content Include="06_Animations\mario-animation.html" />
+    <Content Include="06_Animations\scripts\mario-animation.js" />
+    <Content Include="06_Animations\scripts\kinetic-js-5-1-0.js" />
+    <Content Include="06_Animations\scripts\raphael-min.js" />
+    <Content Include="05_raphael_for_SVG.js\1-create-images.html" />
+    <Content Include="04_SVG\1-MEAN-img.html" />
+    <Content Include="04_SVG\2-win8menu.html" />
+    <Content Include="01_Dom\1-get-all-divs.html" />
+    <Content Include="01_Dom\3-change-color.html" />
+    <Content Include="01_Dom\2_get-value-print-on-console.html" />
+    <Content Include="01_Dom\scripts\1-get-all-divs.js" />
+    <Content Include="01_Dom\scripts\3-change-color.js" />
+    <Content Include="01_Dom\scripts\2-get-value-print-on-console.js" />
+    <Content Include="03_KineticJS\FamilyTree.html" />
+    <Content Include="03_KineticJS\scripts\family-tree.js" />
+    <Content Include="02_Canvas\FlayngCircle.html" />
+    <Content Include="02_Canvas\DrawGraphics.html" />
+    <Content Include="02_Canvas\scripts\2-flayng-circle.js" />
+    <Content Include="02_Canvas\scripts\1-draw-graphics.js" />
+    <Content Include="03_KineticJS\scripts\kinetic-js-5-1-0.js" />
+    <Content Include="05_raphael_for_SVG.js\scripts\1-create-images.js" />
+    <Content Include="05_raphael_for_SVG.js\scripts\raphael-min.js" />
+    <Content Include="09_jQuery-Overview\1-slider.html" />
+    <Content Include="09_jQuery-Overview\2-add-dom-elemnt.html" />
+    <Content Include="09_jQuery-Overview\3-create-table-jquery.html" />
+    <Content Include="09_jQuery-Overview\4-change-bgcolor.html" />
+    <Content Include="09_jQuery-Overview\script\1-slider.js" />
+    <Content Include="09_jQuery-Overview\script\2-add-dom-elemnt.js" />
+    <Content Include="09_jQuery-Overview\script\3-create-table-jquery.js" />
+    <Content Include="09_jQuery-Overview\script\4-change-bgcolor.js" />
+    <Content Include="08_JavaScript-Event-Model\todo-list.html" />
+    <Content Include="08_JavaScript-Event-Model\script\todo-list.js" />
+    <Content Include="07_DOM-Operations\2-divs-rotation.html" />
+    <Content Include="07_DOM-Operations\1-create-div-elements.html" />
+    <Content Include="07_DOM-Operations\3-change-color - Copy.html" />
+    <Content Include="07_DOM-Operations\4-tag-cloud.html" />
+    <Content Include="07_DOM-Operations\script\2-divs-rotation.js" />
+    <Content Include="07_DOM-Operations\script\1-create-div-elements.js" />
+    <Content Include="07_DOM-Operations\script\4-tag-cloud.js" />
+    <Content Include="07_DOM-Operations\script\3-change-color.js" />
+    <Content Include="09_jQuery-Overview\script\jquery-2-1-1.js" />
+    <Content Include="11-handlebars-js\2-dynamic-select.html" />
+    <Content Include="11-handlebars-js\1-table.html" />
+    <Content Include="11-handlebars-js\scripts\2-dynamic-select.js" />
+    <Content Include="11-handlebars-js\scripts\1-table.js" />
+    <Content Include="11-handlebars-js\scripts\handlebars-v1.3.0.js" />
+    <Content Include="11-handlebars-js\scripts\jquery-2-1-1.js" />
+    <Content Include="10-jquery-plugins\1-drop-down-list.html" />
+    <Content Include="10-jquery-plugins\scripts\1-drop-down-list.js" />
+    <Content Include="10-jquery-plugins\scripts\jquery-2-1-1.js" />
+    <Content Include="11-handlebars-js\styles\1-table.css" />
+    <Content Include="EXAM\Task 1\result\1. initial.png" />
+    <Content Include="EXAM\Task 1\result\2. cow-hovered.png" />
+    <Content Include="EXAM\Task 1\result\3. hamster-clicked.png" />
+    <Content Include="EXAM\Task 1\result\4. text-in-filter.png" />
+    <Content Include="EXAM\Task 1\task-files\images\cats.jpg" />
+    <Content Include="EXAM\Task 1\task-files\images\cow.jpg" />
+    <Content Include="EXAM\Task 1\task-files\images\dogs.jpg" />
+    <Content Include="EXAM\Task 1\task-files\images\eagle.jpg" />
+    <Content Include="EXAM\Task 1\task-files\images\elephant.jpg" />
+    <Content Include="EXAM\Task 1\task-files\images\hamster.jpg" />
+    <Content Include="EXAM\Task 1\task-files\images\horse.jpg" />
+    <Content Include="EXAM\Task 1\task-files\images\lion.jpg" />
+    <Content Include="EXAM\Task 1\task-files\images\rabbits.jpg" />
+    <Content Include="EXAM\Task 1\task-files\images\rhinos.jpg" />
+    <Content Include="EXAM\Task 1\task-files\images\squirrel.jpg" />
+    <Content Include="EXAM\Task 1\task-files\images\tigers.jpg" />
+    <Content Include="EXAM\Task 1\task-files\index.html" />
+    <Content Include="EXAM\Task 1\task-files\scripts.js" />
+    <Content Include="EXAM\Task 2\result\1.1. initial-three-columns.png" />
+    <Content Include="EXAM\Task 2\result\1.2. initial-five-columns.png" />
+    <Content Include="EXAM\Task 2\result\1.3. initial-four-columns.png" />
+    <Content Include="EXAM\Task 2\result\2. clicked-picture.png" />
+    <Content Include="EXAM\Task 2\result\3. next-picture.png" />
+    <Content Include="EXAM\Task 2\result\4. previous-picture.png" />
+    <Content Include="EXAM\Task 2\task-files\imgs\1.jpg" />
+    <Content Include="EXAM\Task 2\task-files\imgs\10.jpg" />
+    <Content Include="EXAM\Task 2\task-files\imgs\11.jpg" />
+    <Content Include="EXAM\Task 2\task-files\imgs\12.jpg" />
+    <Content Include="EXAM\Task 2\task-files\imgs\2.jpg" />
+    <Content Include="EXAM\Task 2\task-files\imgs\3.jpg" />
+    <Content Include="EXAM\Task 2\task-files\imgs\4.jpg" />
+    <Content Include="EXAM\Task 2\task-files\imgs\5.jpg" />
+    <Content Include="EXAM\Task 2\task-files\imgs\6.jpg" />
+    <Content Include="EXAM\Task 2\task-files\imgs\7.jpg" />
+    <Content Include="EXAM\Task 2\task-files\imgs\8.jpg" />
+    <Content Include="EXAM\Task 2\task-files\imgs\9.jpg" />
+    <Content Include="EXAM\Task 2\task-files\index.html" />
+    <Content Include="EXAM\Task 2\task-files\jquery.min.js" />
+    <Content Include="EXAM\Task 2\task-files\scripts.js" />
+    <Content Include="EXAM\Task 2\task-files\styles.css" />
+    <Content Include="EXAM\Task 3\task-files\handlebars.js" />
+    <Content Include="EXAM\Task 3\task-files\images\doncho.jpg" />
+    <Content Include="EXAM\Task 3\task-files\images\icons.gif" />
+    <Content Include="EXAM\Task 3\task-files\images\ivo.jpg" />
+    <Content Include="EXAM\Task 3\task-files\images\niki.jpg" />
+    <Content Include="EXAM\Task 3\task-files\images\niki2.jpg" />
+    <Content Include="EXAM\Task 3\task-files\images\todor.jpg" />
+    <Content Include="EXAM\Task 3\task-files\index.html" />
+    <Content Include="EXAM\Task 3\task-files\result.html" />
+    <Content Include="EXAM\Task 3\task-files\scripts.js" />
+    <Content Include="EXAM\Task 3\task-files\styles.css" />
+    <Content Include="Hakaton\images\button3_green.png" />
+    <Content Include="Hakaton\images\button_yellow.png" />
+    <Content Include="Hakaton\images\fire.jpg" />
+    <Content Include="Hakaton\index.html" />
+    <Content Include="Hakaton\libs\jquery-2.1.1.min.js" />
+    <Content Include="Hakaton\scripts\about-as.js" />
+    <Content Include="Hakaton\scripts\menu-controls.js" />
+    <Content Include="Hakaton\scripts\objects.js" />
+    <Content Include="Hakaton\styles\style.css" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.idea\dictionaries\drumev.xml" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.idea\encodings.xml" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.idea\inspectionProfiles\profiles_settings.xml" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.idea\inspectionProfiles\Project_Default.xml" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.idea\jsLinters\jslint.xml" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.idea\misc.xml" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.idea\modules.xml" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.idea\scopes\scope_settings.xml" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.idea\vcs.xml" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.idea\workspace.xml" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\css\style.css" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\diagram\umlDiagram\cssStyles\joint.min.css" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\diagram\umlDiagram\libs\joint.min.js" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\diagram\umlDiagram\libs\joint.shapes.uml.js" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\diagram\umlDiagram\readme.txt" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\diagram\umlDiagram\umlDiagram.html" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\index.html" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\Presentation\hotaru_logo.png" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\Presentation\hotaru_logo.svg" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\scripts\background-looper.js" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\scripts\game-engine.js" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\scripts\game-object.js" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\scripts\player.js" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\scripts\raphael.js" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\scripts\renderer.js" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\scripts\start-screen.js" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\scripts\unused-renderer.js" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\textures\background\clouds-water.png" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\textures\background\clouds.png" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\textures\background\water-clouds.png" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\textures\background\water.png" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\textures\enemy_projectile.png" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\textures\explosion-sprite.png" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\textures\f16.png" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\textures\game_logo.svg" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\textures\mg_projectile.png" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\textures\missile.png" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\textures\sukhoi_sprite.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EXAM\Task 1\Task-1.docx" />
+    <Content Include="EXAM\Task 1\Task-1.pdf" />
+    <Content Include="EXAM\Task 2\Task-2.docx" />
+    <Content Include="EXAM\Task 2\Task-2.pdf" />
+    <Content Include="EXAM\Task 3\Task-3.docx" />
+    <Content Include="EXAM\Task 3\Task-3.pdf" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.gitignore" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\COMMIT_EDITMSG" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\config" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\description" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\FETCH_HEAD" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\HEAD" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\hooks\applypatch-msg.sample" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\hooks\commit-msg.sample" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\hooks\post-commit.sample" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\hooks\post-receive.sample" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\hooks\post-update.sample" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\hooks\pre-applypatch.sample" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\hooks\pre-commit.sample" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\hooks\pre-push.sample" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\hooks\pre-rebase.sample" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\hooks\prepare-commit-msg.sample" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\hooks\update.sample" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\index" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\info\exclude" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\logs\HEAD" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\logs\refs\heads\master" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\logs\refs\remotes\origin\HEAD" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\logs\refs\remotes\origin\master" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\00\32cdbd93ea7c1bca1282d99b30c7f755181fcb" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\01\08b87c05df1d6a9bb1831dc13720065e68660d" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\01\82f9a42908821465dc0fe10572c44d4d85e9aa" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\02\088e44ea8cc359896d75d39d1139c842e98fa7" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\03\48ca3febb15e1e3e195beaa7d52fb3193bcf8b" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\03\90300a96ee8ac64f18c8c207f4638d97204377" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\05\81c92bdefa38ed15f61826597251e278a60d5e" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\06\f7a5f82422fed8409525a9e1ceff434b9acb0e" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\07\ccd6346f47ffc5ab0f29c0529900cb5521bb8b" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\09\0b008756c5d108af211a5da5eeeca21e3c9cf6" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\0b\b030265dff344a3d2ae09119f9ce2d7659c63e" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\0c\0bb3da0d095e385e899e2349a0db6d1f30d5a7" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\0c\fa88d6a13e7f1eab8bc9f4b670c559630e669f" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\0e\aec66c4ed66ca17370627cf0e1aacee80206d8" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\0e\c0a028940e4d876a9d3e51c875ae83a73bff53" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\10\b9e688292837603d460da7094ae61e9c47985a" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\11\13ee24a22d9e3331332ee5810cbf16706fdb90" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\11\62f43828b56d81d6ec6c5bafc6a04a889f5d9c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\13\be9a2e1e3b33deacaff130c9eea21e068f0d42" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\14\4d57f917e50e705dfe8d3c5411f3cb60719abf" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\16\e8e52e2c04e8d8c769adff1a0d6e0187ac8772" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\17\af872716c4680ac30d9339e24031fa269c6b12" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\19\5148b7ed27350042f684c6dee8801840649fee" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\19\7b1631f9085848df3b8e764a2bad4503341ac2" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\1b\455c437124dcafdf42bd30ed965bce21d64b30" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\1b\7a7d9905b5746dec118582b0a767ae2f9b7f28" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\1b\7caefb861c5cd919b4fd02309dec61efdaa339" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\1c\0e86fc33057ffef4242f6fdb8e9421bba7f081" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\1c\201e8a45d05374b14bbbd594ce1ffa0c152d81" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\1c\20fa1c4c197fee3faaddd9be908924bc064d24" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\1c\d5904f6e976ba70e76f5f5c956987ed18adf07" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\1d\775c3a5ea300ef63d47b3fe49b557f0f15ff77" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\1f\6285327b823f402aab3f03ee17897c1b1bc155" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\1f\97a6c2f7c3178add3edca20f857317004ec39f" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\20\3aa7585784928b44715cced4555c900a8f90be" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\20\5811a8e22964ee9bdd4dcd4a50a9b4aa552750" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\21\71277a23416d4f3d520434780b9303c5ddccbb" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\21\fdbff08adf0e38c3d970be37c9f3fe01f4abfa" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\22\1b34932307e8ea00c46692457b9dad14fcdc79" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\23\1176376fde3fee8bbdab98b18a233b7a8ef10c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\24\b565e68c0c9ec49f486b5c53943fed84e2ed50" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\25\11c52563e38ada9167fd3834c8d0377ef3dd4f" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\26\6e7b3bdb7e26d5e2cab74380477c9772b616be" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\26\ec8bbf473507ad52c8bdb0e778029a2bdc603a" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\28\3ab049620a1410905b85491e39b5aecaf9a616" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\28\bd6e2c8c9b78a4606e15d55cc2f0984a4117fd" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\2a\542867d8eae039be17e856a11dd78055611839" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\2a\a0b9573c00af866b7d49dfbc00770489a66739" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\2d\244737c24c04f7d277ee0f8f14947d42e1f95f" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\2e\70f79193a5d2ccfeb57698d2a8b4a492f7b948" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\2f\02a42cea9ce07247fbcb6ffa537c50a17e8677" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\2f\8e5d835cd7ce40de5a288d8083ed14d08f2058" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\32\2dd27280faf089a466f9ea4d0031e5becfb69d" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\36\992d6fbe448002eaa3ee0636450b6f7ce6b8ad" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\3b\312839bf2e939fea3ebdef15630a4b33e57caf" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\3c\e7b75493ca7ddfd672d7c0e6dccadf6166e437" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\3d\396cb715d643da617076eb2617e7aed8906ae1" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\3d\ed4022fb3f65d4d9f94da3f939b071b5737cde" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\3f\b5db4cef3ac58298cb5cf9d9888994b9f28a3f" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\41\5bc82e9bc51a5ef48689cdb93ece518ce1b1e3" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\43\20dccfb00807a6c422c2aa62b1afaca5932da9" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\43\c6e1775422b41358b6fb114e97d7e412c3c95b" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\44\f7552a3261c077bd47c46c17c34ba2caac72e8" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\47\5c920bf435569b547ab23dd9d97180d5edab61" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\48\238c1483a6be6854f8abb45f6d72b989e9c293" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\48\4ce094a5e9227bf62731d2be79ff33391a0428" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\48\5dee64bcfb48793379b200a1afd14e85a8aaf4" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\49\948a30fbe52a3dbc237f6eed8df1978d978731" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\4a\0868e80be7ca9815a7eaacff3ed7f620de53e0" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\4a\1633c8b953c60b92519a3691737fd38d0e8da9" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\4a\75dc49678aeef5320a706de0e869b554a4c2dc" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\4a\99ca196a3d1e104ae788fdcb00b5344bc82478" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\4a\b37086383ab69ad483657d807dace6ff11a8fb" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\4a\fe598ad3e06476f1b18c86280202769539a782" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\4c\3db125030ecdc5eb38be30fd3844e920f44470" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\4c\56bcf31b02fc0013c00dbc4fc3046f4a482fe9" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\4d\216389f67d2f9cb3fd1d263b0b7bf0a82348c5" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\4e\70413e6f019e888365b51fcba93159f0e80d06" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\4e\d559468afc7f3b9b9fbfdffcf8a3a3145f99ec" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\4f\90068e0d5f0046d39a124ceeb8f0df7645e3ea" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\52\76c182d1263337778d62ed26ec4b03d6b84a93" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\53\62a9a08ac9dbe625ca1be6c0d7adbe7687a242" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\54\9f3ae2776b1639f94641c36bad8e6d79fe407f" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\55\88365f5111e357e5027f080072153789384fd9" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\56\862bf92e18be9221e9f6ca23df0f656bc11ab6" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\56\b2770ffc96ecbccaa3d3ca114dcc26a1e87a02" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\58\4a7b544eab5d69a6ec761742b2af68d7e65205" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\59\9a2cc6d9e21505156aa15aa9e16413404e60a3" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\5a\1938a0d69effcbacc54170965024923da017c1" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\5a\dace89118433b5cd06b998a36a8fa7a3ddd0ab" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\5b\62779a31b6d21b9ac229d51357590ada2d61ed" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\5c\d72243b209f8c639aa4c7efac2c878e11999b6" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\5d\03c210a61450dba2662f64c57da70ec5832ec4" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\5d\47f2d1eb9a8c32fa83470bd5d0a24d200143f6" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\5e\08357c1914d297911f59f7d6ab967f3719a507" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\60\4cb7c6a23d97ea0825942f7f5de9a2b86d4828" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\61\50361a6748080008e5880e4d238418805238d9" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\62\80bf0964c49b615242c9bf0eab0bf8660d4837" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\63\a00f2b284f7889df1a3aca8ce6d6b120b13db4" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\65\7e8e7556fb58e6d154d17835d26e3921c20c6b" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\66\458afb854f8a250af9de2fda01439e516bef85" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\69\aef4d7273e5cb8212c5e140a8f231284334dc7" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\69\b464ee567aa3e401e86da99efcc827f8f9c341" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\6b\8184f8eff8a84b43e35fa349b3bac12afe3215" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\6c\2fed31b599f5d911c777bd4596afd5384fb5f6" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\6d\1ef0a45cbb05cda53555b1ca92c36ee7ebff45" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\6d\c4b22effe919276a570b1d48992642a5579239" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\6e\00237ca965a0d8a94c7006ee7abdbefb71fd66" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\6f\14c2001f6c3c8486914567a656a533a6cc8ddf" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\6f\35bbd063ee16d4a78fff9a51695f88679c286c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\6f\68d89593f26b705a16cabab712d369ac1aae83" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\71\b76763289bcef136dd83a1c7d1594ea470c933" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\73\5d0ae5b3619f65400f57ca46f5b51f6fb1a978" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\73\9081b10d4c701c0212d3bf9b33ebb3359f1ae1" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\73\a56b4084f8b55a0e4c0993ba7af9ebc465a532" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\74\9f242514c1c5d86718788d2a25d377787c3d65" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\79\82968cddc5c2e8f056e0bbe72cb7572763df96" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\7a\1785ec786f8c9d5fa66eaba5dbec1c3181c3dd" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\7d\684f4921771e3d85129bdb6a4b10bcaa9f8747" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\7d\9f289c717f9988912717e85ec18cc8a439d915" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\7e\db382c78a50e56f89e66814d7f9a754af850c4" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\80\8044b7a5267823ab65c023aaec008c142fabb2" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\80\c52f5237a8d35280c7817b4ef721979b02507b" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\81\3bbf7e8ffe929f11cfd50e11feffee6cb97b9c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\82\532b63c816696d398091fb70fbb8c42c1b888c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\82\cf0a2ea7be5706b894c58afe4e20bf4fe6e4b7" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\83\b67026ab9fa565728baef3450a05732fbad89e" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\84\777a87b54ad52fef05c195ba517eb3cda204d3" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\84\d98ceb143a634511b158c806c55b530ef542b8" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\85\2490f4029e55d7d3bb08289689e98ec7863123" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\85\f8efc0921bdc05d56680b40a15e24a9cbf304a" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\86\85d68aea5691e158830de9e733c78a08104b3b" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\86\a8dd55f1683b97b1a222a19555417dfa245c5b" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\87\005309adad69854fab80cffdbb771290dd2746" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\87\3b5ee8d7dd136ff5cbc298495510a8989734df" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\8a\0afc516f47aea2b25ccbebb7e463797323252e" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\8a\88f0cf5ca153f3c4bd8c7dab9614fa76b2ccf7" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\8b\adb0e22b77d40887aaacc3d8dfaee29d1520b8" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\8b\b38a9679a978a3487d3d1019ee900d55e36f03" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\8b\f87a416e15d476f509475947789bdb4a07990c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\8b\fde974a728ea03be7ac1ecd059cb6f99da2bd9" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\8c\aa893594b7965f5306ceb1bd2bced3d9801e91" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\8c\def2adbc8b0f817e58835f9e73869b0551ee9d" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\8f\7ff7fac51c54765d16d5fc46de327f4e7a4188" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\90\7ddb735e222c3291a1ce6731b6a9f7fa37fdc1" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\92\2003b8433bcad6ce9778a37628d738faa26389" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\93\19d729d2cde4150092218964c38978e027c26b" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\94\96d5c0fd1f81751b1365837c794a0a9cf07025" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\96\80b9fbeac48d966a1b2ffe5786eafdd69b8aa0" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\96\cbeffa9f3b3a91d22237d18bf60d664af5dae2" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\97\cb9c970e359b7dcee7ad8ab1a0269c5410688c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\98\ff9b66e27e760d06a6c26aa37466290fac9d63" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\99\c2e3c3d835a11973fb2529733251255234c843" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\9a\1de9198ba1cfd7180ca69f7a6342687a6ff041" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\9a\688ff4e1f9e629b2adac54982705ce6d09b426" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\9b\f0acaa5a5dc7eb63f48c6997da079d052f83d1" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\9d\32e507a9813290efcaf393d19f39eaa295ff9d" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\9d\33f80e639a1fdcd3f8f6a5ab133add6d48aac3" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\9e\7f84b41429229972c3f1914d0df4a83a0e4b15" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\9e\a213f39dfa25d518d2108471094fe75cd9ddf8" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\a0\7faa37534440dbbac32456d6ca2cb3e5d112c7" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\a1\03514d1f7096002457a67540269e9a3da2a904" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\a2\c87fbe38586795293c0a339632df6908c53093" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\a3\bd0043215dd5c6f8fb022053e13048ae68f023" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\a3\d5f6aba8f17a9dd6e416fda0047f3b9b8fff1d" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\a5\3d9da90096825e3bea31bc0d448182ba4e57c3" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\a5\51a6ad63a570d1c17a4dcdf7b9c3062e598d98" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\a7\4ceb89714a013753b0b7a7eab3b1673079e95e" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\a8\b302a5891d82a7aaf6fc3283a2ee9d01b7141e" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\a9\4b1351e72804d37eddfbb0f31d47cdd678c22c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ab\38a8b24460048838e99a69380d3531b2bbec6c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ac\2df5e4f758df470f452eec948c1aaecf874f9c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ad\81bd35f2cccc6f20adfe11d43f5ef8f49f41eb" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ae\1456067841ae37aa4f074f5a0f9873096347d8" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ae\2b8059047364db60e4c499a1e198f4213c7f07" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ae\89e088138ec87ad8cf19cd5e290418f00c36f6" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b0\04a3d5717da028d5e6793ac74f19b038e112b2" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b0\0a11680929fbdfd3017019dcd743ecefd27704" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b1\0e15ae1c446cd50ebca9e470a1c4a3995ccd43" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b1\eaf2a93abfd9336254a23e7cd254e1a55369c4" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b2\2036335fa564c7ad02b2769c180c0c69ab017f" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b2\211b156c65e8397b70a731f27a3eb7a0c13796" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b2\4806d8e1ce97164dd51309ceaf44e126d5ceb7" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b3\80872524859007d912cdf4151a1c913d80cadd" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b4\62a2ab27f7b224bc5853854744b8c435177dda" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b4\db3c7f54169d0f2437cea77467c8c1e4b75adf" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b5\3b47a4d1b9a32ce7daa0492b4ff63847ea27e3" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b5\788ab870cf05d0c76c21a0f9dbcdc69797ce66" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b5\8ea66bec4135fff3fdc433ed6cdd5e43977135" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\b8\594d925843a97e5d522f0f08eb74f1c43b933d" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ba\87c00798421e7b5a6ff091d901f3216ebf11e5" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\bb\6b3b92325f4e81c5ecd4ba5ed00b33d280ade8" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\bc\2aac271a97eca8f79d4a329b6debbafbd89361" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\bc\868c9b99b997d27d26d9e2ce51ecfb19057722" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\bf\4ea6088b1ed57fadc06f1ee403b329b480e19a" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\c3\8390797c9b2526b357de1a4b1ab54cb1ff361f" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\c4\394f2b0bcb46755af10bd72ddc5cd23162529e" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\c4\4a6be6a38c24750b00bbf3e4c153f8960b066d" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\c5\742675507a1dcd7c7bc092e80e69c2a27d88fa" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\c5\97747978e9ee2c1ebae036132924c54070912c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\c6\3e10890559a7f51f0b5ff234f0044d32db35ca" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\c6\6df0037a79ba66bcfee856db73688a71cc708e" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\c6\81d118bc09c64e27942a2c041be4913b57e9c9" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\c9\dc6ce650501aff0426b1910142f97d0f43a522" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ca\73a88fc9399707208508f7211fcf8d219551e2" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\cb\ae6fe8682fb2e756dd792abdfc8d4740593ccf" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\cd\24b51e387400d69ba29db31a282dc24870bc38" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\cd\66094992e018e9cdda942141d1ad83350f3bf6" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\cd\edfc3ad01d6c93d96bf49738abd67657f1493c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\cf\65524bf1debf78149bc0d40569490ae5ad0a95" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\d0\96059e9a4d3232f65ce531030ab001cf1ae558" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\d0\f1dfeeba0a868cbe1c351acfec0d89c27f14e0" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\d1\bea91b85bb8d00075d1f45ef7d0d8fb075c305" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\d2\7a38e5ad7b0aca3a7bbb172db76720af38f8a3" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\d3\14c0c44e65ff6e3de777b74cd834a688d8b920" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\d3\fe46b5fa6c3465011c34f28f2c128cc047aa36" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\d4\82b8351de186f689d1ba8863f0ed18a89f854a" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\d5\d55586aba227fd98aa99548205bca55ead5e59" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\d7\793cb038f97ec3d783425ce5672429aa8b57c6" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\d8\c9c450eecf04a4a89bb9414aef8a1d0383a365" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\d8\e722bae688b31d8b31a9181e7452500e1b0df7" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\db\0a138f7646bc2067fb2c23b0d2ecd5a088af37" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\db\890e77a6ce38981d2d3ae9addce09eb9aa3b89" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\db\e9121b4f8b95b047506af40a98f52cd7a77ea4" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\dc\28312daa9e48e76f14b0b9792f39c94a20ab7b" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\dc\9193fdef6eba21453f414daad3a41a38875295" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\dd\382c0d063bf9a7baa4fa6325bba40649e4a4d7" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\dd\7364a48505be05724e3b716a0511d46a35752f" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\dd\8d17f5b8098b376e3e4feda4b20c57c1712513" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\de\f6a6a18457989c7d18825c7c1bbfeefc8b261d" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\df\04f2fe09c6e61b61241d7fc39631ece5e13375" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\df\7f7dfdebdebaec4e0a8741201f5257078ce595" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\e0\1640016a80476ea0249926f9ac87fc8227f468" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\e0\3014652ec54bcc3794874c64abad7bd1c29271" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\e1\4c0498599e657eb3902f7797a12e8c7af0b80c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\e1\5a026f58759a1781c14f2e4a8db2a3f6c2c7f4" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\e2\06d70d8595e2a50675ba11de48efcfa012497d" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\e2\e897fcfbca63a5ef9cc5ffa65d1f0eaf62a307" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\e2\f50f470fed5f83fd29d3aaad044f7527a6ef89" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\e5\90569bbf23d5b8f33c2bcdc77e46645f0db238" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\e8\1925326415ba4bcae6fbe1cdeccd52a4bc404c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\e8\533e47efc75bd2055283fe51398b8d70042181" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\e9\a27987d9c233f7412b24bc9a15d4e896778be3" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\e9\e025d0bdc57e921aedc1555607f4462b3e021e" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ea\8062305bfad699f5d088d1170525ea27997a37" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ec\14ade380f45ede8d7b3f68946691e7dbe62555" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ed\8ce4fb9cb52d51d0b0ac538862136a94afc937" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ee\1acb45076d5ec985a08ae2fa81d5d1784c741f" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ef\5dadd6e8c802d3f879a9837ab03fb8bef173d3" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ef\a6a0f57a5c621183310d7e2ba480faed3eba9c" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ef\c86afc0bdc5718bef858f7b98dd15e3b161178" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\f0\3b9e186625a45246027a47f55f2f8baf89beae" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\f2\654e46d041ecf112cba750fa9d391bf12e915f" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\f2\66a6efcac5f4e51d665bd192ce5a730f854d58" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\f3\524ed26b51ff6142b0cc2184fef9af02c7e004" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\f6\35f0a8dbcee59b53acced30741e643951e9727" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\f7\7f6dcf941aa91ac12145866f40155ddac1bc39" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\f8\9d5505dd0f99af7f8e4cc92e6d5497c3a744cb" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\f9\26eb71850737152915a23fec9cf4ce60572a79" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\fa\00c4f94db789ce88884bbd53b24a8b9e5ca73b" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\fa\325c1a674f6851a5d1e65052922e6d0e9187b3" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\fb\4ba7a7eb4c7f8659264324a7dca563a73574da" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\fb\e0b1a88de93022d9fc9e6cbd763c301a200c08" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\fb\ebeabebfd98b5dd951b3120bae43cfe796123d" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\fd\c7695dddef4569cd0f9d8b38a9ea7ba112c4f0" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ff\4e540ae5d0111d5b2865c1349103d8b618b12e" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\ff\71d1b9bf9db10d4c3afc1c75d4dba5052daefb" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\pack\pack-6090ff55ec00b8703db812402389362b8c0a5e0f.idx" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\pack\pack-6090ff55ec00b8703db812402389362b8c0a5e0f.pack" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\ORIG_HEAD" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\packed-refs" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\refs\heads\master" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\refs\remotes\origin\HEAD" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\refs\remotes\origin\master" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\.idea\Hotaru-JavaScript.iml" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\Documentation\JS_TeamProject_documentation.docx" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\Presentation\TeamHotaru.pptx" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\Presentation\Thumbs.db" />
+    <Content Include="Hotaru-JavaScript\Hotaru-JavaScript\README.md" />
+    <Content Include="Hakaton\images\Thumbs.db" />
+    <Content Include="Hakaton\gencho-hakaton-team.docx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\objects\info\" />
+    <Folder Include="Hotaru-JavaScript\Hotaru-JavaScript\.git\refs\tags\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24237</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:24237/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

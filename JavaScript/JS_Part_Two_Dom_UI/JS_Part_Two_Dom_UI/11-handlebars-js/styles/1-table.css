@@ -1,0 +1,17 @@
+﻿.table-container table {
+            border-collapse: collapse;
+        }
+
+        .table-container th {
+            border: 1px solid #000;
+            background-color: gray;
+            color: white;
+        }
+
+        .table-container td {
+            border: 1px solid #000;
+        }
+
+        .table-container tr:nth-child(2n) {
+            background-color: #d0d0d0;
+        }

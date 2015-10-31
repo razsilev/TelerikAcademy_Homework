@@ -1,0 +1,217 @@
+1.  Create a database with two tables:
+	Persons(Id(PK), FirstName, LastName, SSN)
+	and Accounts(Id(PK), PersonId(FK), Balance).
+	Insert few records for testing.
+	Write a stored procedure that selects the full names of all persons.
+
+CREATE DATABASE PersonalInfo
+GO
+
+USE PersonalInfo
+GO
+
+CREATE TABLE Persons (
+  PersonId int IDENTITY (1, 1),
+  FirstName nvarchar(100),
+  LastName nvarchar(100),
+  SSN nvarchar(30),
+  CONSTRAINT PK_PersonID PRIMARY KEY(PersonId),
+)
+GO
+
+CREATE TABLE Accounts (
+  AccountID int IDENTITY (1, 1),
+  PersonId int,
+  Balance money,
+  CONSTRAINT PK_Accounts PRIMARY KEY(AccountID),
+  CONSTRAINT FK_Accounts_Persons FOREIGN KEY(PersonId)
+    REFERENCES Persons(PersonId)
+)
+GO
+
+INSERT INTO Persons (FirstName, LastName, SSN)
+VALUES  ('Gosho', 'Geshev', 'asdfg'),
+		('Emo', 'Nikolov', 'asddc'),
+		('Niki', 'Iliev', 'edcvf'),
+		('Stamat', 'Kenov', 'asdxc'),
+		('Ivo', 'Semkov', 'ytrww')
+GO
+
+INSERT INTO Accounts (Balance, PersonId)
+VALUES  (12, 1),
+		(43, 2),
+		(523, 3),
+		(6523, 4),
+		(423, 5)
+GO
+
+CREATE PROC usp_GetPersonsNames
+AS
+  SELECT  FirstName + ' ' + Lastname AS [Person name]
+   FROM Persons
+GO
+
+EXEC usp_GetPersonsNames
+GO
+
+----------------------------------------
+2.  Create a stored procedure that accepts
+	a number as a parameter and returns all
+	persons who have more money in their
+	accounts than the supplied number.
+
+USE PersonalInfo;
+GO
+
+CREATE PROC usp_GetPersonsNamesWithMoneyMoreThen(@amount money)
+AS
+  SELECT  FirstName + ' ' + Lastname AS [Person name],
+  a.Balance
+   FROM Persons p
+    INNER JOIN Accounts a
+	ON p.PersonId = a.PersonId
+WHERE a.Balance > @amount
+GO
+
+EXEC usp_GetPersonsNamesWithMoneyMoreThen 50;
+GO
+
+----------------------------------------
+3.  Create a function that accepts as parameters – sum,
+	yearly interest rate and number of months.
+	It should calculate and return the new sum.
+	Write a SELECT to test whether the function works as expected.
+
+USE PersonalInfo;
+GO
+
+CREATE FUNCTION fn_CalculateNewSum(@sum money, @months int, @interestRate float)
+RETURNS money
+AS
+BEGIN
+  DECLARE @newSum money;
+  SET @newSum = @sum + (@sum * @months * @interestRate / 100 / 12)
+
+  RETURN @newSum
+END
+GO
+
+SELECT PersonalInfo.dbo.fn_CalculateNewSum(100, 12, 10) AS [New amount]
+GO
+
+----------------------------------------
+4.  Create a stored procedure that uses the function
+	from the previous example to give an interest
+	to a person's account for one month. It should take
+	the AccountId and the interest rate as parameters.
+
+USE PersonalInfo;
+GO
+
+CREATE PROC usp_SetOneMonthInterest(@accountID int, @interestRate float)
+AS
+  UPDATE Accounts
+	SET Balance = dbo.fn_CalculateNewSum(Balance, 1, @interestRate)
+  WHERE AccountID = @accountID
+GO
+
+EXEC usp_SetOneMonthInterest 1, 10
+GO
+
+----------------------------------------
+5.  Add two more stored procedures WithdrawMoney( AccountId, money)
+	and DepositMoney (AccountId, money) that operate in transactions.
+
+USE PersonalInfo;
+GO
+
+CREATE PROC usp_WithdrawMoney(@accountID int, @sum money)
+AS
+BEGIN
+BEGIN TRANSACTION
+  UPDATE Accounts
+	SET Balance = Balance - @sum
+  WHERE AccountID = @accountID
+COMMIT TRANSACTION
+END
+GO
+
+EXEC usp_WithdrawMoney 1, 10
+GO
+
+CREATE PROC usp_DepositMoney(@accountID int, @sum money)
+AS
+BEGIN
+BEGIN TRANSACTION
+  UPDATE Accounts
+	SET Balance = Balance + @sum
+  WHERE AccountID = @accountID
+COMMIT TRANSACTION
+END
+GO
+
+EXEC usp_DepositMoney 1, 10
+GO
+
+----------------------------------------
+6.  Create another table – Logs(LogID, AccountID, OldSum, NewSum).
+	Add a trigger to the Accounts table that enters a new entry
+	into the Logs table every time the sum on an account changes.
+
+USE PersonalInfo;
+GO
+
+CREATE TABLE Logs (
+  LogID int IDENTITY,
+  AccountID int NOT NULL,
+  OldSum money NOT NULL,
+  NewSum money NOT NULL,
+  CONSTRAINT PK_Logs PRIMARY KEY(LogID),
+  CONSTRAINT FK_Logs_Accounts FOREIGN KEY(AccountID)
+    REFERENCES Accounts(AccountID)
+);
+GO
+
+CREATE TRIGGER tr_BalanceChange ON Accounts AFTER UPDATE
+AS
+    INSERT INTO Logs (AccountID, OldSum, NewSum)
+	SELECT d.AccountID, d.Balance, i.Balance
+	FROM deleted d, inserted i
+		WHERE i.AccountID = d.AccountID
+GO
+
+EXEC usp_DepositMoney 2, 100
+GO
+
+----------------------------------------
+7.  Define a function in the database TelerikAcademy that
+	returns all Employee's names (first or middle or last name)
+	and all town's names that are comprised of given set of letters.
+	Example 'oistmiahf' will
+	return 'Sofia', 'Smith', … but not 'Rob' and 'Guy'.
+
+
+
+----------------------------------------
+8.  Using database cursor write a T-SQL script
+	that scans all employees and their addresses
+	and prints all pairs of employees that live in the same town.
+
+
+
+----------------------------------------
+9.  * Write a T-SQL script that shows for each town
+	a list of all employees that live in it. Sample output:
+
+
+
+----------------------------------------
+10.  Define a .NET aggregate function StrConcat that
+	takes as input a sequence of strings and return
+	a single string that consists of the input strings
+	separated by ','. For example the following SQL statement
+	should return a single string:
+
+
+
+----------------------------------------

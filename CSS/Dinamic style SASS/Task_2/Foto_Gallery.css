@@ -1,0 +1,20 @@
+body, section, label, ul, li, img, input {
+  margin: 0;
+  padding: 0; }
+
+body section {
+  width: 650px;
+  margin: 20px; }
+  body section ul {
+    list-style-type: none; }
+    body section ul li {
+      float: left;
+      margin-right: 10px; }
+      body section ul li label img:last-of-type, body section ul li input[type="radio"] {
+        display: none; }
+      body section ul li input[type="radio"]:checked + label img:last-of-type {
+        display: block;
+        position: absolute;
+        top: 120px;
+        left: 40px; }
+

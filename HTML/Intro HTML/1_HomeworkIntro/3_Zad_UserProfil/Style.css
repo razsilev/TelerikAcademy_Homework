@@ -1,0 +1,41 @@
+﻿a {
+    margin-right: 60pt;
+}
+
+body {
+    background-color: #cbf8f4;
+    color: #124892
+}
+
+header {
+    height: 40pt;
+}
+
+h2 {
+    font-style: italic;
+    margin-top: 3pt;
+    margin-bottom: 3pt;
+}
+
+#heading {
+    border-top: 1pt solid #acacac;
+    border-bottom: 1pt solid #acacac;
+    margin-bottom: 3pt;
+}
+
+#rest {
+    padding-left:12pt;
+}
+
+ul {
+    list-style-type: none;
+    font-style: normal;
+}
+
+ol {
+    font-style: italic;
+}
+
+#rest {
+    font-style: italic;
+}

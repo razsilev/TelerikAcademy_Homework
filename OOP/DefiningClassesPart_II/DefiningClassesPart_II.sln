@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWhit3DPoint", "WorkWhit3DPoint\WorkWhit3DPoint.csproj", "{F7157DB2-9C31-4E5C-ACCE-B9A89A6533EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGenericList", "MyGenericList\MyGenericList.csproj", "{6F601976-8937-4FCF-8A27-53E63BBD6C93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGenericMatrix", "MyGenericMatrix\MyGenericMatrix.csproj", "{CBD1C004-93CF-449E-A13F-55E38BABF0E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateVersionAttribute", "CreateVersionAttribute\CreateVersionAttribute.csproj", "{419B13B6-70CB-4E73-9E3E-3BA86A71FCC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7157DB2-9C31-4E5C-ACCE-B9A89A6533EB}.Debug|x86.ActiveCfg = Debug|x86
+		{F7157DB2-9C31-4E5C-ACCE-B9A89A6533EB}.Debug|x86.Build.0 = Debug|x86
+		{F7157DB2-9C31-4E5C-ACCE-B9A89A6533EB}.Release|x86.ActiveCfg = Release|x86
+		{F7157DB2-9C31-4E5C-ACCE-B9A89A6533EB}.Release|x86.Build.0 = Release|x86
+		{6F601976-8937-4FCF-8A27-53E63BBD6C93}.Debug|x86.ActiveCfg = Debug|x86
+		{6F601976-8937-4FCF-8A27-53E63BBD6C93}.Debug|x86.Build.0 = Debug|x86
+		{6F601976-8937-4FCF-8A27-53E63BBD6C93}.Release|x86.ActiveCfg = Release|x86
+		{6F601976-8937-4FCF-8A27-53E63BBD6C93}.Release|x86.Build.0 = Release|x86
+		{CBD1C004-93CF-449E-A13F-55E38BABF0E1}.Debug|x86.ActiveCfg = Debug|x86
+		{CBD1C004-93CF-449E-A13F-55E38BABF0E1}.Debug|x86.Build.0 = Debug|x86
+		{CBD1C004-93CF-449E-A13F-55E38BABF0E1}.Release|x86.ActiveCfg = Release|x86
+		{CBD1C004-93CF-449E-A13F-55E38BABF0E1}.Release|x86.Build.0 = Release|x86
+		{419B13B6-70CB-4E73-9E3E-3BA86A71FCC5}.Debug|x86.ActiveCfg = Debug|x86
+		{419B13B6-70CB-4E73-9E3E-3BA86A71FCC5}.Debug|x86.Build.0 = Debug|x86
+		{419B13B6-70CB-4E73-9E3E-3BA86A71FCC5}.Release|x86.ActiveCfg = Release|x86
+		{419B13B6-70CB-4E73-9E3E-3BA86A71FCC5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

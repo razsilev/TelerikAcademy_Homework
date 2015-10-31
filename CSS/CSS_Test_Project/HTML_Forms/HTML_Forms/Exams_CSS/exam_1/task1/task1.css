@@ -1,0 +1,100 @@
+﻿body,
+html,
+div,
+ul,
+aside,
+a {
+  margin: 0;
+  padding: 0;
+}
+div#wrapper {
+  margin: 10px 20px;
+  font-size: 16px;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul.sidebar {
+  width: 213px;
+  border-radius: 10px;
+  background: #d29bff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #d29bff 0%, #8977ff 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d29bff), color-stop(100%, #8977ff));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #d29bff 0%, #8977ff 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #d29bff 0%, #8977ff 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #d29bff 0%, #8977ff 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #d29bff 0%, #8977ff 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d29bff', endColorstr='#8977ff', GradientType=0);
+  /* IE6-9 */
+  font-family: Arial;
+  font-size: 1.4rem;
+  padding: 5px 0;
+}
+ul.sidebar ul {
+  width: 225px;
+  display: none;
+  position: absolute;
+  top: -5px;
+  left: 100%;
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  background-color: #b5aaff;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+ul.sidebar ul li {
+  margin-left: auto;
+  margin-right: auto;
+  width: 210px;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #9d00ff;
+}
+ul.sidebar ul li:last-of-type {
+  border: 0;
+}
+ul.sidebar ul li:hover {
+  border: 1px solid #9d00ff;
+  border-radius: 5px;
+}
+ul.sidebar ul li:first-of-type:before {
+  content: url('imgs/arrow.png');
+  position: absolute;
+  left: -15px;
+  top: 8px;
+}
+ul.sidebar > li {
+  margin-left: auto;
+  margin-right: auto;
+  width: 183px;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #9d00ff;
+}
+ul.sidebar > li:last-of-type {
+  border: 0;
+}
+ul.sidebar > li:hover {
+  border: 1px solid #9d00ff;
+  border-radius: 5px;
+}
+ul.sidebar > li:hover ul {
+  display: block;
+}
+/*# sourceMappingURL=task1.css.map */

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsls" href="student.xslt"?>
+<students culture="en-US"
+          xmlns="urn:students"
+          xmlns:exam="http://schemas.microsoft.com/ado/2006/04/edm">
+	<student>
+		<name>Pesho</name>
+		<sex>male</sex>
+		<birthDate>1990-03-24</birthDate>
+    <phone>1232343456</phone>
+    <email>pesho@pesho.org</email>
+    <course>3</course>
+    <specialty>Informatic</specialty>
+    <facultyNumber>335566787</facultyNumber>
+    <exam:takenExams>
+      <exam>
+        <examName>database</examName>
+        <tutor>Ivailo</tutor>
+        <score>100</score>
+      </exam>
+      <exam>
+        <examName>OOP</examName>
+        <tutor>Niki</tutor>
+        <score>80</score>
+      </exam>
+    </exam:takenExams>
+	</student>
+	<student>
+		<name>Gosho</name>
+		<sex>male</sex>
+		<birthDate>1995-01-18</birthDate>
+    <phone>1234765987</phone>
+    <email>gosho@gosho.bg</email>
+    <course>3</course>
+    <specialty>System administration</specialty>
+    <facultyNumber>3214353467</facultyNumber>
+    <exam:takenExams>
+      <exam>
+        <examName>operation system</examName>
+        <tutor>Borislav Varadinov</tutor>
+        <score>95</score>
+      </exam>
+    <exam>
+        <examName>C#</examName>
+        <tutor>Penka</tutor>
+        <score>55</score>
+      </exam>
+    </exam:takenExams>
+	</student>
+</students>

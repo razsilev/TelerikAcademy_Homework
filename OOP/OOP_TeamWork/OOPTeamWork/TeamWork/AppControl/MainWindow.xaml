@@ -1,0 +1,145 @@
+﻿<Window x:Class="AppControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tasks" Height="415.045" Width="726.477" WindowStartupLocation="CenterScreen">
+    <Canvas>
+        <Grid Background="{StaticResource GridBrush}" Width="718">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="52*"/>
+                <ColumnDefinition Width="97*"/>
+            </Grid.ColumnDefinitions>
+
+            <Calendar x:Name="Calendar" HorizontalAlignment="Left" Margin="36,28,0,0" 
+                  VerticalAlignment="Top" Height="168" Width="179" 
+                  MouseDoubleClick="Calendar_MouseDoubleClick">
+                <Calendar.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                        <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                        <GradientStop Color="#FF718597" Offset="0.375"/>
+                        <GradientStop Color="#FF02101B" Offset="1"/>
+                    </LinearGradientBrush>
+                </Calendar.BorderBrush>
+                <Calendar.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE4EAF0" Offset="0"/>
+                        <GradientStop Color="#FFECF0F4" Offset="0.16"/>
+                        <GradientStop Color="#FFFCFCFD" Offset="0.16"/>
+                        <GradientStop Color="#FF23C5BE" Offset="1"/>
+                    </LinearGradientBrush>
+                </Calendar.Background>
+            </Calendar>
+
+            <Button x:Name="deleteTask"
+                Content="Delete Task" 
+                HorizontalAlignment="Left"
+                Margin="63,256,0,0" 
+                VerticalAlignment="Top"
+                Width="120" 
+                Background="{StaticResource ButtonBrush}"
+                Style="{DynamicResource RoundedButton}"
+                Click="OnDeleteTaskClick" Height="19" 
+                >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            
+            <Button x:Name="showContacts" 
+                Content="Show Contacts" 
+                HorizontalAlignment="Left"
+                Margin="63,310,0,0" 
+                VerticalAlignment="Top"
+                Width="120" 
+                Background="{StaticResource ButtonBrush}"
+                Style="{DynamicResource RoundedButton}"
+                Click="OnShowContactsWindowClick" Height="19" >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+
+            <DataGrid x:Name="taskGrid"
+                      Margin="0,28,50,-28" 
+                      ItemsSource="{Binding}"
+                      MinColumnWidth="50"
+                      Background="#FFC9DCD9"
+                      AutoGenerateColumns="False"
+                      BorderBrush="#FF7E8E9E"
+                      Foreground="#FF030708"
+                      CanUserResizeRows="False"
+                      RowHeaderWidth="0"
+                      VerticalScrollBarVisibility="Visible"
+                      Grid.Column="1"
+                      MouseDoubleClick="OnMouseDoubleClickOnTaskGridRow">
+
+                <!--On selection colour the whole row-->
+                <DataGrid.CellStyle>
+                    <Style TargetType="DataGridCell">
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="true">
+                                <Setter Property="Background" Value="#FF11A68B"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.CellStyle>
+
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Task" IsReadOnly="True" CanUserResize="False">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Name}" MinWidth="100"
+                                       MaxWidth="100" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn Header="Description" IsReadOnly="True" CanUserResize="False">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Description}" MinWidth="150"
+                                       MaxWidth="150" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn Header="Priority" Binding="{Binding Path=Priority}"
+                                    CanUserReorder="False" IsReadOnly="True" MinWidth="60" MaxWidth="60">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                    <DataGridTextColumn Header="Deadline" CanUserReorder="False" IsReadOnly="True"
+                                    Binding="{Binding Path=Date, ConverterCulture='bg-BG',StringFormat={}{0:dd.MM.yyyy}}"
+                                    MinWidth="80" Width="*">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+        <Image Width="25"
+               Height="25"
+               HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+               Source="infoIcon.png" RenderTransformOrigin="3.678,0.452" Canvas.Left="187" Canvas.Top="201">
+            <Image.ToolTip>
+                <StackPanel>
+                    <TextBlock FontWeight="Bold">Add Task</TextBlock>
+                    <TextBlock>Double-Click on a date to create new task</TextBlock>
+                </StackPanel>
+            </Image.ToolTip>
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+    </Canvas>
+</Window>

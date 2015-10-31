@@ -1,0 +1,85 @@
+﻿body, html, div, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+}
+
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos) {
+    background: @from-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+}
+
+.clearFix() {
+    zoom: 1;
+
+    &:after {
+        display: block;
+        content: "";
+        height: 0;
+        clear: both;
+    }
+}
+
+body {
+    color: #000;
+    font-size: 16px;
+    font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+
+    div#wrapper {
+        width: 960px;
+
+        div.select-list {
+            margin-left: 25px;
+            margin-top: 25px;
+
+            ul {
+                width: 150px;
+                height: 200px;
+                border-radius: 5px;
+                list-style-type: none;
+                overflow-y: scroll;
+
+                float: left;
+                .linear-gradient(#8168ff, 0, #ffffff, 100%);
+
+                li {
+                    padding: 5px 15px;
+                    border-bottom: 1px solid #000;
+
+                    &:first-letter {
+                        text-decoration: underline;
+                    }
+
+                    &.selected {
+                        background: #6c4eff;
+                    }
+
+                    &:last-of-type {
+                        border: none;
+                    }
+                }
+
+                
+            }
+
+            a {
+                float: left;
+                position: relative;
+                top: 90px;
+                margin-left: 4px;
+
+                img {
+                }
+
+                &.btn-select {
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}

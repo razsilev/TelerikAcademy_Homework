@@ -1,0 +1,138 @@
+﻿body,
+html,
+div,
+form,
+fieldset,
+legend,
+input,
+button,
+label {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #fff;
+  font-size: 18px;
+  font-family: Cambria, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif;
+}
+body div#wrapper {
+  width: 960px;
+  font-size: 1rem;
+}
+body div#wrapper form {
+  width: 380px;
+  margin: 25px;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 15px;
+  text-align: right;
+  background: #ebff5b;
+  background: -moz-linear-gradient(top, #ebff5b 0, #444444 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ebff5b), color-stop(100%, #444444));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ebff5b 0, #444444 100%);
+  background: -o-linear-gradient(top, #ebff5b 0, #444444 100%);
+  background: -ms-linear-gradient(top, #ebff5b 0, #444444 100%);
+  background: linear-gradient(to bottom, #ebff5b 0, #444444 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebff5b', endColorstr='#444444', GradientType=0);
+}
+body div#wrapper form fieldset {
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 3px solid #555555;
+  border-radius: 5px;
+  text-align: right;
+}
+body div#wrapper form fieldset:first-of-type {
+  margin-bottom: 0;
+}
+body div#wrapper form fieldset:last-of-type {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+body div#wrapper form fieldset legend {
+  padding: 0 15px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #fff;
+}
+body div#wrapper form fieldset input {
+  margin-top: 5px;
+  padding: 5px 15px;
+  border: 2px solid #444444;
+  border-radius: 5px;
+  color: #fff;
+  background: #e8fc5b;
+  background: -moz-linear-gradient(top, #e8fc5b 0, #444444 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e8fc5b), color-stop(100%, #444444));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e8fc5b 0, #444444 100%);
+  background: -o-linear-gradient(top, #e8fc5b 0, #444444 100%);
+  background: -ms-linear-gradient(top, #e8fc5b 0, #444444 100%);
+  background: linear-gradient(to bottom, #e8fc5b 0, #444444 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8fc5b', endColorstr='#444444', GradientType=0);
+}
+body div#wrapper form fieldset input#tb-age {
+  padding: 5px 5px;
+  width: 35px;
+}
+body div#wrapper form fieldset label {
+  font-size: 1rem;
+  color: #fff;
+}
+body div#wrapper form input[type="radio"] {
+  display: none;
+}
+body div#wrapper form input[type="radio"]:checked + label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+body div#wrapper form button {
+  margin-top: 15px;
+  padding: 5px 15px;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #333333;
+  background: #e3fd28;
+  background: -moz-linear-gradient(top, #e3fd28 0, #464644 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e3fd28), color-stop(100%, #464644));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e3fd28 0, #464644 100%);
+  background: -o-linear-gradient(top, #e3fd28 0, #464644 100%);
+  background: -ms-linear-gradient(top, #e3fd28 0, #464644 100%);
+  background: linear-gradient(to bottom, #e3fd28 0, #464644 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3fd28', endColorstr='#464644', GradientType=0);
+}
+body div#wrapper form button:hover {
+  background: #f1ff8e;
+}
+body div#wrapper form input[type='reset'] {
+  margin-top: 15px;
+  padding: 5px 15px;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #333333;
+  background: #e3fd28;
+  background: -moz-linear-gradient(top, #e3fd28 0, #464644 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e3fd28), color-stop(100%, #464644));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e3fd28 0, #464644 100%);
+  background: -o-linear-gradient(top, #e3fd28 0, #464644 100%);
+  background: -ms-linear-gradient(top, #e3fd28 0, #464644 100%);
+  background: linear-gradient(to bottom, #e3fd28 0, #464644 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3fd28', endColorstr='#464644', GradientType=0);
+}
+body div#wrapper form input[type='reset']:hover {
+  background: #f1ff8e;
+}
+/*# sourceMappingURL=task3.css.map */

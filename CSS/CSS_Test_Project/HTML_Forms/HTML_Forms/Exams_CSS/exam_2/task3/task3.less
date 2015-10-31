@@ -1,0 +1,115 @@
+﻿body, html, div, li, ul, h1, p, span, button, form, fieldset, legend, button {
+    margin: 0;
+    padding: 0;
+}
+
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos) {
+    background: @from-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+}
+
+.clearFix() {
+    zoom: 1;
+
+    &:after {
+        display: block;
+        content: "";
+        height: 0;
+        clear: both;
+    }
+}
+
+
+body {
+    color: #000;
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+    font-size: 16px;
+
+    div#wrapper {
+        width: 960px;
+        margin-left: 25px;
+        margin-top: 25px;
+
+        form {
+            width: 380px;
+            padding: 15px;
+            border: 1px solid #000;
+            border-radius: 15px;
+            text-align: right;
+            .linear-gradient(#68d1ff, 0, #88fcfb, 100%);
+
+            input {
+                padding-left: 15px;
+            }
+
+            fieldset {
+                padding: 5px 15px;
+                border: 3px solid #000;
+                border-radius: 5px;
+                text-align: right;
+
+                legend {
+                    padding: 0 15px;
+                    font-size: 1.3rem;
+                    font-style: italic;
+                }
+
+                input {
+                    width: 164px;
+                    height: 24px;
+                    margin-top: 1px;
+                    border: 1px solid #008fce;
+                    border-radius: 5px;
+                    .linear-gradient(#69d2ff, 0, #8bfefb, 100%);
+                }
+
+                    input[type="number"] {
+                        width: 40px;
+                        padding-left: 5px;
+                    }
+
+                &:last-of-type {
+                    margin-bottom: 5px;
+                }
+            }
+
+            & > input {
+                margin: 15px 0 0 0;
+                padding: 5px 15px;
+                font-size: 1.2rem;
+                border-radius: 5px;
+                border: none;
+                border-bottom: 1px solid #000;
+                .linear-gradient(#36c2ff, 0, #88fcfb, 100%);
+
+                &:hover {
+                    background: #9be1ff;
+                }
+            }
+
+            button {
+                padding: 5px 15px;
+                font-size: 1.2rem;
+                border-radius: 5px;
+                border: none;
+                border-bottom: 1px solid #000;
+                .linear-gradient(#36c2ff, 0, #88fcfb, 100%);
+
+                &:hover {
+                    background: #9be1ff;
+                }
+            }
+
+            & > input[type='radio'] {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

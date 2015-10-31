@@ -1,0 +1,41 @@
+Design pattern: Simple Factory
+	* Създавам видеокартите със Simple Factory. Класът е VideoCardFactory
+
+Design pattern: Strategy
+	* 
+
+Design pattern: Template Method
+	* 
+
+Design pattern: Abstract factory
+	* Създавам Компютрите със Abstract factory.
+
+Design pattern: Composite
+	* 
+
+Design pattern: Mediator
+	* 
+
+Found bottlenecks:
+	* Генерирането на случайно число от процесора. Вместо директно да се генерира число се генерират числа докато не се генерира число от търсеният интервал.
+	* 
+
+Found bugs:
+	* Видео картата е винаги null. Не се сетва от конструктора. Приема се като параметър и не се сетва.
+	* 
+	* 
+
+Single responsibility principle
+	* 
+
+Open/closed principle
+	* 
+
+Liskov substitution principle
+	* 
+
+Interface segregation principle
+	* 
+
+Dependency inversion principle
+	* 

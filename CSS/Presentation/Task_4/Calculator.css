@@ -1,0 +1,129 @@
+﻿section {
+    font-family: Calibri;
+    width: 500px;
+    height: 480px;
+    border-radius: 5px;
+    background-color: #a1cceb;
+}
+
+    section header h1 {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 40px;
+        font-weight: normal;
+    }
+
+    section header div {
+        float: right;
+    }
+
+        section header div button {
+            margin: 0px;
+            color: white;
+            background-color: #99c0dc;
+        }
+
+            section header div button:first-of-type {
+                border-bottom-left-radius: 5px;
+            }
+
+            section header div button:last-of-type {
+                background-color: #ee6a6a;
+                padding: 0px 15px;
+                border-bottom-right-radius: 5px;
+                margin-right: 5px;
+            }
+
+    section section {
+        width: 488px;
+        height: 438px;
+        margin: 5px;
+        background-color: #c9dfef;
+        border: 1px solid #808080;
+    }
+
+        section section header {
+            background-color: #b7c7d3;
+            border-bottom: 1px solid #808080;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+            section section header h1 {
+                margin-left: 15px;
+            }
+
+                section section header h1:first-letter {
+                    text-decoration: underline;
+                }
+
+        section section div {
+            height: 90%;
+            padding: 10px;
+            border: 0px solid red;
+        }
+
+            section section div article {
+                width: 99%;
+                border: 1px solid #808080;
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+
+                section section div article.resultArea {
+                    width: 99%;
+                    border: 1px solid #808080;
+                    border-radius: 5px;
+                    text-align: right;
+                    background-color: #dce5eb;
+                    margin-bottom: 5px;
+                }
+
+                section section div article p {
+                    font-size: 25px;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                }
+
+                section section div article table {
+                    border: 0px solid green;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                    section section div article table td {
+                        border: 0px solid green;
+                    }
+
+            section section div .radioArticle {
+                text-align: left;
+                width: 20%;
+            }
+
+                section section div .radioArticle ul {
+                    list-style-type: none;
+                    padding: 0px;
+                }
+
+            section section div #buttons {
+                border: none;
+                float: right;
+                margin-top: -242px;
+                width: 370px;
+            }
+
+                section section div #buttons button {
+                    width: 40px;
+                    height: 36px;
+                }
+
+                section section div #buttons #buttonEqual {
+                    height: 70px;
+                }
+
+                section section div #buttons #buttonZero {
+                    width: 95%;
+                }

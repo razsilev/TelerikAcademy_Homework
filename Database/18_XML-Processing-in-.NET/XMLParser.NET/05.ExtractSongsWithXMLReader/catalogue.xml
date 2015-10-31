@@ -1,0 +1,58 @@
+<Catalogue>
+  <Artist name="Korn" type="Artist">
+    <Album name="Rap">
+      <Year>1998</Year>
+      <Producer>Ba li go</Producer>
+      <Price>100,0</Price>
+      <Songs>
+        <Song>
+          <Title>Udriii</Title>
+          <Duration>3</Duration>
+        </Song>
+        <Song>
+          <Title>Udriii1</Title>
+          <Duration>3,34</Duration>
+        </Song>
+        <Song>
+          <Title>Udriii2</Title>
+          <Duration>3,56</Duration>
+        </Song>
+        <Song>
+          <Title>Udriii3</Title>
+          <Duration>5,32</Duration>
+        </Song>
+        <Song>
+          <Title>Udriii4</Title>
+          <Duration>3</Duration>
+        </Song>
+      </Songs>
+    </Album>
+	<Album name="Rock">
+      <Year>1998</Year>
+      <Producer>Ba li go</Producer>
+      <Price>100,0</Price>
+      <Songs>
+        <Song>
+          <Title>Udriii</Title>
+          <Duration>3</Duration>
+        </Song>
+        <Song>
+          <Title>Udriii1</Title>
+          <Duration>3,34</Duration>
+        </Song>
+        <Song>
+          <Title>Udriii2</Title>
+          <Duration>3,56</Duration>
+        </Song>
+        <Song>
+          <Title>Udriii3</Title>
+          <Duration>5,32</Duration>
+        </Song>
+        <Song>
+          <Title>Udriii4</Title>
+          <Duration>3</Duration>
+        </Song>
+      </Songs>
+    </Album>
+  </Artist>
+</Catalogue>

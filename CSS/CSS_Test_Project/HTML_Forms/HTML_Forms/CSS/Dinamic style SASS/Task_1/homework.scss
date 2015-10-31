@@ -1,0 +1,257 @@
+$defaultBackground: rgb(146, 21, 242);
+
+@mixin linear-gradient($from, $to, $startProcent: 0% , $endProcent: 100%, $repeat: none) {
+	background-color: $from; /* Old browsers */
+	background-image: -moz-linear-gradient(top,  $from $startProcent, $to $endProcent); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop($startProcent,$from), color-stop($endProcent,$to)); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top,  $from $startProcent,$to $endProcent); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top,  $from $startProcent,$to $endProcent); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top,  $from $startProcent,$to $endProcent); /* IE10+ */
+	background-image: linear-gradient(to bottom,  $from $startProcent,$to $endProcent); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	background-repeat:$repeat;
+}
+
+@mixin clearFix{
+	zoom:1;
+	&:after{
+		display: block;
+		content: "";
+		height: 0;
+		clear: both;
+	}
+}
+
+body, header, div, aside, section, footer, p, h1, h2, a, form, input label, ul, li, nav {
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background-color: $defaultBackground;
+	color: white;
+	font: 14px normal arial;
+
+	& > header {
+		@include linear-gradient(rgb(212, 147, 254), $defaultBackground);
+		padding-top: 15px;
+		padding-left: 10px;
+
+		div#reg-form-container{
+			width: 175px;
+			float: right;
+			position: relative;
+			right: 5%;
+			top: 50%;
+			
+			div{
+				text-align: right;
+			}
+
+
+			label{
+				font-size: 0.8em;
+			}
+
+			input{
+				margin-top: 10px;
+				margin-left: 5px;
+				padding-left: 5px;
+				width: 110px;
+				background-color: rgb(179, 94, 243);
+				border: 1px solid black;
+				border-radius: 10px;
+			}
+
+			button{
+				height: 25px;
+				margin-top: 5px;
+				border-radius: 10px;
+				background-color: rgb(179, 94, 243);
+				color: white;
+				font-size: 0.8em;
+				font-weight: bold;
+			}
+		}
+
+		div#logo-container{
+			float: left;
+			position: relative;
+
+			h1{
+
+				a{
+					
+					img{
+						width: 270px;
+					}
+				}
+			}
+		}
+
+		nav{
+			border: 1px solid black;
+			border-radius: 12px;
+            display: inline-block;
+            width: 75%;
+			padding: 8px 15px;
+			margin: 30px 0px 25px 20px;
+
+
+			ul{
+				list-style-type: none;
+
+				li{
+					display: inline-block;
+					padding-right: 10px;
+
+					a{
+						color: white;
+						text-decoration: none;
+						font-size: 1.2em;
+					}
+
+					&:hover{
+						
+						a{
+							text-decoration: underline;
+							color: #a8a8a8;
+						}
+
+						li{
+							a{
+								color: #fff;
+								text-decoration: none;
+							}
+
+							&:hover{
+									a{
+										text-decoration: underline;
+										color: #a8a8a8;
+									}
+							}
+						}
+					}
+
+					&:hover	ul{
+								display: block;
+								
+							li{
+								 display: block;
+								 margin: 0 15px;
+								 padding: 10px 0;
+								 border-bottom: 1px solid black;
+
+								 &:last-of-type{
+									border-bottom: none;
+								 }
+							}
+					}
+
+					ul{
+						position: absolute;
+						display: none;
+						background-color: rgba(179, 94, 243, 0.9);
+						border-radius: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	section{
+		width: 75%;
+        display: inline-block;
+		
+		article{
+			
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid black;
+			border-radius: 10px;
+			font-size: 0.8em;
+			
+			footer{
+			
+				text-align: right;
+				font-size: 1.2em;
+
+				a{
+					text-decoration: none;
+					color: rgb(204, 163, 248);
+				}
+			}
+		}
+	}
+
+	aside{
+		margin-left: 10px;
+		width: 20%;
+		font-size: 0.8em;
+		display: inline-block;
+		position: relative;
+		top: -20px;
+
+		& > ul{
+			list-style-type: none;
+
+			& > li{
+				margin-top: 15px;
+				padding: 15px;
+				border: 1px solid black;
+				border-radius: 5px;
+
+				h2{
+					margin-bottom: 10px;
+				}
+
+				p{
+					margin-left: 5px;
+
+					a{
+						color: rgb(170, 170, 170);
+						text-decoration: none;
+					}
+
+					strong{
+						color: rgb(204, 204, 204);
+						font-weight: bold;
+						font-style: normal;
+					}
+
+					em{
+						color: rgb(204, 204, 204);
+						font-weight: normal;
+						font-style: italic;
+					}
+				}
+
+				ul{
+					list-style-type: none;
+
+					li{
+						margin-left: 15px;
+						padding-left: 25px;
+						background: url(images/li-dot.png) no-repeat;
+					}
+				}
+			}
+		}
+	}
+
+	& > footer{
+		zoom: 1;
+		&:before{
+			display: block;
+			content: "";
+			height: 0;
+			clear: both;
+		}
+
+		margin-top: 10px;
+		border: 0px solid black;
+		text-align: center;
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookstore.Models", "Bookstore.Models\Bookstore.Models.csproj", "{EAB12FE5-715F-40C8-90B6-D6B47DDBF78A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookstore.Data", "Bookstore.Data\Bookstore.Data.csproj", "{60F95FE2-42E7-4781-BAD2-C2152DA4D00E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookstore.Importer", "Bookstore.Importer\Bookstore.Importer.csproj", "{2E833F46-A8B6-4180-9150-8F0229CDBC24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAB12FE5-715F-40C8-90B6-D6B47DDBF78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAB12FE5-715F-40C8-90B6-D6B47DDBF78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAB12FE5-715F-40C8-90B6-D6B47DDBF78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAB12FE5-715F-40C8-90B6-D6B47DDBF78A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60F95FE2-42E7-4781-BAD2-C2152DA4D00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F95FE2-42E7-4781-BAD2-C2152DA4D00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F95FE2-42E7-4781-BAD2-C2152DA4D00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F95FE2-42E7-4781-BAD2-C2152DA4D00E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E833F46-A8B6-4180-9150-8F0229CDBC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E833F46-A8B6-4180-9150-8F0229CDBC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E833F46-A8B6-4180-9150-8F0229CDBC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E833F46-A8B6-4180-9150-8F0229CDBC24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

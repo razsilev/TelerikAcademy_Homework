@@ -1,0 +1,57 @@
+1.  What is the expected running time of the following C# code? Explain why. Assume the array's size is n.
+
+long Compute(int[] arr)
+{
+    long count = 0;
+    for (int i=0; i<arr.Length; i++)
+    {
+        int start = 0, end = arr.Length-1;
+        while (start < end)
+            if (arr[start] < arr[end])
+                { start++; count++; }
+            else 
+                end--;
+    }
+    return count;
+}
+
+- Сложността е:  n*n
+ Защото има два вложени цикъла всеки от които се върти от 0 до n.
+
+------------------------------------------ 
+2. What is the expected running time of the following C# code? Explain why.
+
+long CalcCount(int[,] matrix)
+{
+    long count = 0;
+    for (int row=0; row<matrix.GetLength(0); row++)
+        if (matrix[row, 0] % 2 == 0)
+            for (int col=0; col<matrix.GetLength(1); col++)
+                if (matrix[row,col] > 0)
+                    count++;
+    return count;
+}
+
+- словността е:  n*(m / 2) ~ еквивалентно на n*m
+ защото се обхожда матрица като вероятността да е четен елемента в първата колона на
+ всеки ред е 50 на 50.
+ 
+ ------------------------------------------
+ 3.  * What is the expected running time of the following C# code? Explain why.
+ 
+ long CalcSum(int[,] matrix, int row)
+{
+    long sum = 0;
+    for (int col = 0; col < matrix.GetLength(0); col++) 
+        sum += matrix[row, col];
+    if (row + 1 < matrix.GetLength(1)) 
+        sum += CalcSum(matrix, row + 1);
+    return sum;
+}
+
+Console.WriteLine(CalcSum(matrix, 0));
+
+- сложността е n*m
+ защото, така извикана функцията CalcSum(matrix, 0) намира сумата на всички елементи в
+ матрицата. Ако редът не е последен се вика рекурсивно функцията да намери сумата на 
+ следващия ред и я прибавя към текущата.

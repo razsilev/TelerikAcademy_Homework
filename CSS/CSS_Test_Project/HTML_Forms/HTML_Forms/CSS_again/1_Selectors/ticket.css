@@ -1,0 +1,50 @@
+﻿p, td, body, table, section, h1 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #595959;
+    font-family: Calibri;
+}
+
+section {
+    padding: 5px;
+}
+
+#head {
+    color: #9b9d9e;
+}
+
+td {
+    padding-top: 10px;
+    width: 130px;
+}
+
+td:first-child {
+    color: #c7d9d8;
+}
+
+.yellowTextColor {
+    color: #d7c982;
+}
+
+.redTextColor {
+    color: #ff0000;
+}
+
+.grayTextColor {
+    color: #a09696;
+}
+
+.orangeTextColor {
+    color: #ff6a00;
+}
+
+.marginTop {
+    margin-top: 10px;
+}
+
+.positionTop{
+    vertical-align: top;
+}

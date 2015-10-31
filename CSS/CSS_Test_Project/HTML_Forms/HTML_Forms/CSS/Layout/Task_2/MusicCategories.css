@@ -1,0 +1,41 @@
+﻿body {
+    background-color: rgb(238, 238, 238);
+}
+
+article {
+    border: 1px solid grey;
+    width: 400px;
+    padding: 15px;
+    margin-bottom: 30px;
+    height: 100px;
+    font-family: Calibri;
+    background-color: white;
+}
+
+    article button {
+        background-image: url(images/button1.png);
+        width: 100px;
+        height: 30px;
+        float: right;
+        color: white;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        margin-top: 5px;
+    }
+
+        article button:last-of-type {
+            margin-right: 5px;
+        }
+
+div {
+    float: right;
+    height: 90%;
+    width: 62%;
+    border: 0px solid red;
+}
+
+p {
+    margin: 0;
+    display: inline-block;
+    width: 90%;
+}

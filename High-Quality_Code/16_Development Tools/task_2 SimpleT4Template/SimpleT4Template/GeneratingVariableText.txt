@@ -1,0 +1,19 @@
+﻿My template for numbers square root, rounded with three fractional digits.
+
+   The square root of 1 is 1
+   The square root of 2 is 1.414
+   The square root of 3 is 1.732
+   The square root of 4 is 2
+   The square root of 5 is 2.236
+   The square root of 6 is 2.449
+   The square root of 7 is 2.646
+   The square root of 8 is 2.828
+   The square root of 9 is 3
+   The square root of 10 is 3.162
+   The square root of 11 is 3.317
+   The square root of 12 is 3.464
+   The square root of 13 is 3.606
+   The square root of 14 is 3.742
+   The square root of 15 is 3.873
+
+That's it!

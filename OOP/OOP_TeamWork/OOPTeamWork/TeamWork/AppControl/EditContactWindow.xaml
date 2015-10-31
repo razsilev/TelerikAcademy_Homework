@@ -1,0 +1,73 @@
+﻿<Window x:Class="AppControl.EditContactWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Contact" MinHeight="230" MaxHeight="230" MinWidth="320" MaxWidth="320" 
+        Name="EditWindow" WindowStartupLocation="CenterOwner">
+    <Window.Resources>
+
+        <LinearGradientBrush x:Key="BrushEditWindow" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="White" Offset="1"/>
+            <GradientStop Color="#FF898989" Offset="0.993"/>
+        </LinearGradientBrush>
+
+    </Window.Resources>
+    <Canvas Background="{DynamicResource BrushEditWindow}">
+        <Label Content="Name*" Height="29" Canvas.Left="0" Canvas.Top="10"
+               Foreground="#FF11A68B" FontSize="13" FontWeight="Bold" Width="90"
+               HorizontalContentAlignment="Right">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Mobile*" Height="29" Canvas.Left="0" Canvas.Top="44"
+               Foreground="#FF11A68B" FontWeight="Bold" FontSize="13" Width="90"
+               HorizontalContentAlignment="Right">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="E-mail" Height="29" Canvas.Left="0" Canvas.Top="78"
+               Foreground="#FF11A68B" FontWeight="Bold" FontSize="14" Width="90"
+               HorizontalContentAlignment="Right">
+            <Label.Effect>
+                <DropShadowEffect RenderingBias="Quality"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Date of birth" Height="29" Canvas.Top="112" Foreground="#FF11A68B"
+               FontWeight="Bold" FontSize="13" Width="90" HorizontalContentAlignment="Right" Canvas.Left="0">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Group" Height="29" Canvas.Left="0" Canvas.Top="146" HorizontalContentAlignment="Right"
+                   Foreground="#FF11A68B" FontWeight="Bold" FontSize="13" Width="90">
+            <Label.Effect>
+                <DropShadowEffect RenderingBias="Quality"/>
+            </Label.Effect>
+        </Label>
+        <TextBox Name="EditName" MaxLength="30" Width="150" Height="24" Canvas.Left="100"
+                 Canvas.Top="15" FontSize="12" VerticalContentAlignment="Center" IsReadOnly="False"/>
+        <TextBox Name="EditMobile" MaxLength="15" Width="150" Height="24" IsReadOnly="False"
+                     Canvas.Left="100" Canvas.Top="49" FontSize="12" VerticalContentAlignment="Center"/>
+        <TextBox Name="EditEmail" MaxLength="30" Width="150" Height="24" IsReadOnly="False"
+                     Canvas.Left="100" Canvas.Top="83" FontSize="12" VerticalContentAlignment="Center"/>
+        <TextBox Name="EditBirthday" MaxLength="15" Width="100" Height="24" IsReadOnly="False"
+                     Canvas.Left="100" Canvas.Top="117" FontSize="12" VerticalContentAlignment="Center"/>
+        <ComboBox Name="GroupType" FontSize="12" Width="100" SelectedIndex="3"
+                      Height="22" Canvas.Left="100" Canvas.Top="149">
+            <ComboBoxItem Content="Family"/>
+            <ComboBoxItem Content="Friends"/>
+            <ComboBoxItem Content="Business"/>
+            <ComboBoxItem Content="Other"/>
+        </ComboBox>
+        <Button Content="Save" Width="60" Height="30" FontSize="14"
+                    FontWeight="Regular" Background="{StaticResource ButtonBrush}"
+                    Style="{DynamicResource RoundedButton}" Click="OnSaveBtnClick"
+                    Canvas.Left="222" Canvas.Top="131" RenderTransformOrigin="-3.867,3.433">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+    </Canvas>
+</Window>

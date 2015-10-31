@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69F707CA-3343-4E00-AA1E-639A9505CBF1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HTML_Forms</RootNamespace>
+    <AssemblyName>HTML_Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\Dinamic style SASS\Task_1\homework.css">
+      <DependentUpon>homework.scss</DependentUpon>
+    </Content>
+    <Content Include="CSS\Dinamic style SASS\Task_1\homework.html" />
+    <Content Include="CSS\Dinamic style SASS\Task_1\images\li-dot.png" />
+    <Content Include="CSS\Dinamic style SASS\Task_1\images\Sample Logo.png" />
+    <Content Include="CSS\Dinamic style SASS\Task_2\Foto_Gallery.css">
+      <DependentUpon>Foto_Gallery.scss</DependentUpon>
+    </Content>
+    <Content Include="CSS\Dinamic style SASS\Task_2\Foto_Gallery.html" />
+    <Content Include="CSS\Dinamic style SASS\Task_2\images\pic1.jpg" />
+    <Content Include="CSS\Dinamic style SASS\Task_2\images\pic2.jpg" />
+    <Content Include="CSS\Dynamic_Stylesheet_LESS\homework.html" />
+    <Content Include="CSS\Dynamic_Stylesheet_LESS\images\li-dot.png" />
+    <Content Include="CSS\Dynamic_Stylesheet_LESS\images\Sample Logo.png" />
+    <Content Include="CSS\Dynamic_Stylesheet_LESS\LESS Styling.css">
+      <DependentUpon>LESS Styling.less</DependentUpon>
+    </Content>
+    <Content Include="CSS\Dynamic_Stylesheet_LESS\LESS Styling.min.css">
+      <DependentUpon>LESS Styling.css</DependentUpon>
+    </Content>
+    <Content Include="CSS\Intro\Task_1\StyleSheet.css" />
+    <Content Include="CSS\Intro\Task_1\TableForm.html" />
+    <Content Include="CSS\Intro\Task_2\Style.css" />
+    <Content Include="CSS\Intro\Task_2\TableIsPromoted.html" />
+    <Content Include="CSS\Intro\Task_3\homework-3.html" />
+    <Content Include="CSS\Intro\Task_3\style.css" />
+    <Content Include="CSS\Layout\Task_1\SubLists.css" />
+    <Content Include="CSS\Layout\Task_1\SubLists.html" />
+    <Content Include="CSS\Layout\Task_2\MusicCategories.css" />
+    <Content Include="CSS\Layout\Task_2\MusicCategories.html" />
+    <Content Include="CSS\Layout\Task_3\managment.css" />
+    <Content Include="CSS\Layout\Task_3\managment.html" />
+    <Content Include="CSS\Layout\Task_4\Css_Tutorial.css" />
+    <Content Include="CSS\Layout\Task_4\Css_Tutorial.html" />
+    <Content Include="CSS\Layout\Task_5\Notebooks.css" />
+    <Content Include="CSS\Layout\Task_5\Notebooks.html" />
+    <Content Include="CSS\Layout\Task_6\News.css" />
+    <Content Include="CSS\Layout\Task_6\News.html" />
+    <Content Include="CSS\Presentation\Task_1\Leter.html" />
+    <Content Include="CSS\Presentation\Task_1\Style.css" />
+    <Content Include="CSS\Presentation\Task_2\2. homework.css" />
+    <Content Include="CSS\Presentation\Task_2\2. homework.html" />
+    <Content Include="CSS\Presentation\Task_3\NestedDivs.html" />
+    <Content Include="CSS\Presentation\Task_3\NestedDivs.css" />
+    <Content Include="CSS\Presentation\Task_4\Calculator.css" />
+    <Content Include="CSS\Presentation\Task_4\Calculator.html" />
+    <Content Include="CSS_again\1_Selectors\contactTable.css" />
+    <Content Include="CSS_again\1_Selectors\ContactTable.html" />
+    <Content Include="CSS_again\1_Selectors\homework-3.html" />
+    <Content Include="CSS_again\1_Selectors\homework_3.css" />
+    <Content Include="CSS_again\1_Selectors\ticket.css" />
+    <Content Include="CSS_again\1_Selectors\ticket.html" />
+    <Content Include="CSS_again\2_Presentation\1_article.css" />
+    <Content Include="CSS_again\2_Presentation\1_article.html" />
+    <Content Include="CSS_again\2_Presentation\2. homework.css" />
+    <Content Include="CSS_again\2_Presentation\2. homework.html" />
+    <Content Include="CSS_again\2_Presentation\3_Nested_div_elements.css" />
+    <Content Include="CSS_again\2_Presentation\3_Nested_div_elements.html" />
+    <Content Include="CSS_again\2_Presentation\4_Calculator.css" />
+    <Content Include="CSS_again\2_Presentation\4_Calculator.html" />
+    <Content Include="CSS_again\2_Presentation\images\li-dot.png" />
+    <Content Include="CSS_again\2_Presentation\images\Sample Logo.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task1\images\first-dropdown-hover.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task1\images\first-dropdown.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task1\images\hover.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task1\images\initial.PNG" />
+    <Content Include="Exams_CSS\Exams-Sample\task1\images\next-menu-selected.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task1\images\no-dropdown-hover.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task1\images\second-dropdown.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task1\jquery-1.9.0.js" />
+    <Content Include="Exams_CSS\Exams-Sample\task1\task1.css">
+      <DependentUpon>task1.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\Exams-Sample\task1\task1.html" />
+    <Content Include="Exams_CSS\Exams-Sample\task2\images\login-form-nav-hover.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task2\images\login-form.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task2\images\registration-form-button-hover.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task2\images\registration-form.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task2\images\text-in-boxes.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task2\jquery-1.9.0.js" />
+    <Content Include="Exams_CSS\Exams-Sample\task2\task2.css" />
+    <Content Include="Exams_CSS\Exams-Sample\task2\task2.html" />
+    <Content Include="Exams_CSS\Exams-Sample\task3\images\products-list-product-1.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task3\images\products-list-product-2.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task3\images\products-list-product-6-button-hover.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task3\images\products-list-product-6.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task3\images\products-list-product-close-hover.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task3\images\products-list.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task3\imgs\cart.png" />
+    <Content Include="Exams_CSS\Exams-Sample\task3\jquery-1.9.0.js" />
+    <Content Include="Exams_CSS\Exams-Sample\task3\task3.css" />
+    <Content Include="Exams_CSS\Exams-Sample\task3\task3.html" />
+    <Content Include="Exams_CSS\exam_4\task1\imgs\arrow-left.png" />
+    <Content Include="Exams_CSS\exam_4\task1\imgs\arrow-right.png" />
+    <Content Include="Exams_CSS\exam_4\task1\task-images\initial.png" />
+    <Content Include="Exams_CSS\exam_4\task1\task1.css">
+      <DependentUpon>task1.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_4\task1\task1.html" />
+    <Content Include="Exams_CSS\exam_4\task2\imgs\presentation-title.png" />
+    <Content Include="Exams_CSS\exam_4\task2\imgs\presentation.png" />
+    <Content Include="Exams_CSS\exam_4\task2\task-images\initial.png" />
+    <Content Include="Exams_CSS\exam_4\task2\task-images\presentation-4-hover.png" />
+    <Content Include="Exams_CSS\exam_4\task2\task2.css">
+      <DependentUpon>task2.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_4\task2\task2.html" />
+    <Content Include="Exams_CSS\exam_4\task3\imgs\about.png" />
+    <Content Include="Exams_CSS\exam_4\task3\imgs\install.png" />
+    <Content Include="Exams_CSS\exam_4\task3\imgs\manage.png" />
+    <Content Include="Exams_CSS\exam_4\task3\imgs\openSource.png" />
+    <Content Include="Exams_CSS\exam_4\task3\imgs\tuneUp.png" />
+    <Content Include="Exams_CSS\exam_4\task3\imgs\twitter.png" />
+    <Content Include="Exams_CSS\exam_4\task3\task-images\initial.png" />
+    <Content Include="Exams_CSS\exam_4\task3\task3.css">
+      <DependentUpon>task3.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_4\task3\task3.html" />
+    <Content Include="Exams_CSS\exam_1\task2\jquery-1.9.1.js" />
+    <Content Include="Exams_CSS\exam_1\task2\tab-strip.js" />
+    <Content Include="Exams_CSS\exam_1\task2\task-images\initial.png" />
+    <Content Include="Exams_CSS\exam_1\task2\task-images\tab-2-hover.png" />
+    <Content Include="Exams_CSS\exam_1\task2\task-images\tab-2-selected-tab-3-hover.png" />
+    <Content Include="Exams_CSS\exam_1\task2\task-images\tab-2-selected.png" />
+    <Content Include="Exams_CSS\exam_1\task2\task-images\tab-3-selected.png" />
+    <Content Include="Exams_CSS\exam_1\task2\task-images\tab-4-selected.png" />
+    <Content Include="Exams_CSS\exam_1\task2\task2.css">
+      <DependentUpon>task2.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_1\task2\task2.html" />
+    <Content Include="Exams_CSS\exam_1\task3\jquery-1.9.1.js" />
+    <Content Include="Exams_CSS\exam_1\task3\task-images\initial.png" />
+    <Content Include="Exams_CSS\exam_1\task3\task-images\send-btn-hover.png" />
+    <Content Include="Exams_CSS\exam_1\task3\task-images\text-in-input.png" />
+    <Content Include="Exams_CSS\exam_1\task3\task3.css">
+      <DependentUpon>task3.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_1\task3\task3.html" />
+    <Content Include="Exams_CSS\exam_2\task1\jquery-1.9.1.js" />
+    <Content Include="Exams_CSS\exam_2\task1\task-images\collapsed.png" />
+    <Content Include="Exams_CSS\exam_2\task1\task-images\hover-label-1.png" />
+    <Content Include="Exams_CSS\exam_2\task1\task-images\initial.png" />
+    <Content Include="Exams_CSS\exam_2\task1\task-images\label-1-opened.png" />
+    <Content Include="Exams_CSS\exam_2\task1\task-images\label-2-opened.png" />
+    <Content Include="Exams_CSS\exam_2\task1\task-images\label-3-opened.png" />
+    <Content Include="Exams_CSS\exam_2\task1\task-images\label-4-opened.png" />
+    <Content Include="Exams_CSS\exam_2\task1\task1.css">
+      <DependentUpon>task1.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_2\task1\task1.html" />
+    <Content Include="Exams_CSS\exam_2\task2\imgs\messages.png" />
+    <Content Include="Exams_CSS\exam_2\task2\imgs\notifications.png" />
+    <Content Include="Exams_CSS\exam_2\task2\imgs\people.png" />
+    <Content Include="Exams_CSS\exam_2\task2\task-images\hover-messages.png" />
+    <Content Include="Exams_CSS\exam_2\task2\task-images\hover-notifications.png" />
+    <Content Include="Exams_CSS\exam_2\task2\task-images\hover-people.png" />
+    <Content Include="Exams_CSS\exam_2\task2\task-images\hover-sub-item-messages.png" />
+    <Content Include="Exams_CSS\exam_2\task2\task-images\hover-sub-item-notifications.png" />
+    <Content Include="Exams_CSS\exam_2\task2\task-images\hover-sub-item-people.png" />
+    <Content Include="Exams_CSS\exam_2\task2\task-images\initial.png" />
+    <Content Include="Exams_CSS\exam_2\task2\task2.css">
+      <DependentUpon>task2.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_2\task2\task2.html" />
+    <Content Include="Exams_CSS\exam_2\task3\task-images\clear-button-hover.png" />
+    <Content Include="Exams_CSS\exam_2\task3\task-images\filled-form.png" />
+    <Content Include="Exams_CSS\exam_2\task3\task-images\initial.png" />
+    <Content Include="Exams_CSS\exam_2\task3\task-images\register-button-hover.png" />
+    <Content Include="Exams_CSS\exam_2\task3\task3.css">
+      <DependentUpon>task3.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_2\task3\task3.html" />
+    <Content Include="Exams_CSS\exam_3\task1\imgs\male.png" />
+    <Content Include="Exams_CSS\exam_3\task1\imgs\me.png" />
+    <Content Include="Exams_CSS\exam_3\task1\task-images\hover-message1.png" />
+    <Content Include="Exams_CSS\exam_3\task1\task-images\hover-message2.png" />
+    <Content Include="Exams_CSS\exam_3\task1\task-images\hover-message3.png" />
+    <Content Include="Exams_CSS\exam_3\task1\task-images\hover-message4.png" />
+    <Content Include="Exams_CSS\exam_3\task1\task-images\initial.png" />
+    <Content Include="Exams_CSS\exam_3\task1\task1.css">
+      <DependentUpon>task1.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_3\task1\task1.html" />
+    <Content Include="Exams_CSS\exam_3\task2\imgs\arrow-left.png" />
+    <Content Include="Exams_CSS\exam_3\task2\imgs\arrow-right.png" />
+    <Content Include="Exams_CSS\exam_3\task2\jquery-1.9.1.js" />
+    <Content Include="Exams_CSS\exam_3\task2\task-images\all-items-many-selected.png" />
+    <Content Include="Exams_CSS\exam_3\task2\task-images\all-items-second-ul.png" />
+    <Content Include="Exams_CSS\exam_3\task2\task-images\initial.png" />
+    <Content Include="Exams_CSS\exam_3\task2\task-images\selected-items-second-ul.png" />
+    <Content Include="Exams_CSS\exam_3\task2\task-images\some-items-in-selected-items.png" />
+    <Content Include="Exams_CSS\exam_3\task2\task2.css">
+      <DependentUpon>task2.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_3\task2\task2.html" />
+    <Content Include="Exams_CSS\exam_3\task3\task-images\filled-form.png" />
+    <Content Include="Exams_CSS\exam_3\task3\task-images\hover-clear-button.png" />
+    <Content Include="Exams_CSS\exam_3\task3\task-images\hover-register-button.png" />
+    <Content Include="Exams_CSS\exam_3\task3\task-images\initial.png" />
+    <Content Include="Exams_CSS\exam_3\task3\task-images\terms-yes-selected.png" />
+    <Content Include="Exams_CSS\exam_3\task3\task3.css">
+      <DependentUpon>task3.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_3\task3\task3.html" />
+    <Content Include="HTML\homework-design-1.html" />
+    <Content Include="HTML\homework-design-2.html" />
+    <Content Include="HTML\refactoring-homework.html" />
+    <Content Include="HTML\Task_Fore\Notebooks.html" />
+    <Content Include="HTML\Task_One\1_Zad_Form.html" />
+    <Content Include="HTML\Task_Three\Grid_Component.html" />
+    <Content Include="HTML\Task_Two\students.html" />
+    <Content Include="HTML\ContactForm.html" />
+    <Content Include="Scss1.css">
+      <DependentUpon>Scss1.scss</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_1\task1\imgs\arrow.png" />
+    <Content Include="Exams_CSS\exam_1\task1\task-images\hover-item 2.png" />
+    <Content Include="Exams_CSS\exam_1\task1\task-images\hover-item-1.png" />
+    <Content Include="Exams_CSS\exam_1\task1\task-images\hover-item-3.png" />
+    <Content Include="Exams_CSS\exam_1\task1\task-images\hover-sub-item-1-1.png" />
+    <Content Include="Exams_CSS\exam_1\task1\task-images\hover-sub-item-6-2.png" />
+    <Content Include="Exams_CSS\exam_1\task1\task-images\initial.png" />
+    <Content Include="Exams_CSS\exam_1\task1\task1.css">
+      <DependentUpon>task1.less</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_1\task1\task1.html" />
+    <Content Include="Test.css" />
+    <Content Include="Test.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Less1.less" />
+    <Content Include="Scss1.scss" />
+    <Content Include="CSS\Dinamic style SASS\Task_1\homework.scss" />
+    <Content Include="CSS\Dinamic style SASS\Task_2\Foto_Gallery.scss" />
+    <Content Include="CSS\Dynamic_Stylesheet_LESS\LESS Styling.less" />
+    <Content Include="Exams_CSS\exam_1\task1\imgs\Thumbs.db" />
+    <Content Include="Exams_CSS\exam_1\task1\task-images\Thumbs.db" />
+    <Content Include="Exams_CSS\exam_1\task1\task1.less" />
+    <Content Include="Exams_CSS\exam_1\task1\task1.css.map">
+      <DependentUpon>task1.css</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_1\task2\task-images\Thumbs.db" />
+    <Content Include="Exams_CSS\exam_1\task2\task2.less" />
+    <Content Include="Exams_CSS\exam_1\task2\task2.css.map">
+      <DependentUpon>task2.css</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_1\task3\task-images\Thumbs.db" />
+    <Content Include="Exams_CSS\exam_1\task3\task3.less" />
+    <Content Include="Exams_CSS\exam_1\task3\task3.css.map">
+      <DependentUpon>task3.css</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_2\task1\task-images\Thumbs.db" />
+    <Content Include="Exams_CSS\exam_2\task2\task-images\Thumbs.db" />
+    <Content Include="Exams_CSS\exam_2\task3\task-images\Thumbs.db" />
+    <Content Include="Exams_CSS\exam_2\task3\task3.less" />
+    <Content Include="Exams_CSS\exam_2\task3\task3.css.map">
+      <DependentUpon>task3.css</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_2\task2\task2.less" />
+    <Content Include="Exams_CSS\exam_2\task2\task2.css.map">
+      <DependentUpon>task2.css</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_2\task1\task1.less" />
+    <Content Include="Exams_CSS\exam_2\task1\task1.css.map">
+      <DependentUpon>task1.css</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_4\CSS Styling Exam - Variant 4.doc" />
+    <Content Include="Exams_CSS\exam_4\task1\task1.less" />
+    <Content Include="Exams_CSS\exam_4\task1\task1.css.map">
+      <DependentUpon>task1.css</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_4\task2\task2.less" />
+    <Content Include="Exams_CSS\exam_4\task2\task2.css.map">
+      <DependentUpon>task2.css</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_4\task3\task3.less" />
+    <Content Include="Exams_CSS\exam_4\task3\task3.css.map">
+      <DependentUpon>task3.css</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_3\CSS Styling Exam - Variant 3.doc" />
+    <Content Include="Exams_CSS\exam_3\task1\imgs\Thumbs.db" />
+    <Content Include="Exams_CSS\exam_3\task1\task-images\Thumbs.db" />
+    <Content Include="Exams_CSS\exam_3\task2\imgs\Thumbs.db" />
+    <Content Include="Exams_CSS\exam_3\task2\task-images\Thumbs.db" />
+    <Content Include="Exams_CSS\exam_3\task3\task-images\Thumbs.db" />
+    <Content Include="Exams_CSS\exam_3\task3\task3.less" />
+    <Content Include="Exams_CSS\exam_3\task3\task3.css.map">
+      <DependentUpon>task3.css</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_3\task2\task2.less" />
+    <Content Include="Exams_CSS\exam_3\task2\task2.css.map">
+      <DependentUpon>task2.css</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\exam_3\task1\task1.less" />
+    <Content Include="Exams_CSS\exam_3\task1\task1.css.map">
+      <DependentUpon>task1.css</DependentUpon>
+    </Content>
+    <Content Include="Exams_CSS\Exams-Sample\task1\task1.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CSS\Layout\Task_2\Images\" />
+    <Folder Include="CSS_again\1_Selectors\images\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2407</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2407/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
